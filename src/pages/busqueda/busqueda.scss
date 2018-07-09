@@ -1,0 +1,61 @@
+page-busqueda {
+
+    .page-title {
+        font-size: 7px !important;
+        color: color($colors, primary);
+    }
+
+    .searchbar-style {
+        margin-bottom: 5px !important;
+    }
+
+    .busquedas-header {
+        font-size: 7px !important;
+        color: color($colors, dark);
+        margin-top: 5px;
+    }
+
+    .card {
+        box-shadow: 0 0px 0px;
+    }
+
+    .card-header {
+        font-size: 15px;
+        font-weight: bold;
+        color: color($colors, dark);
+        padding-left: 10px;
+    }
+
+    .card-subheader {
+        font-size: 12px;
+        padding-top: 3px;
+        padding-bottom: 0;
+        color: gray;
+        padding-left: 10px;
+    }
+    
+    .card-row {
+        width: 100% !important;
+        align-items: center;
+    }
+
+    .img-container {
+        height: 100% !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .search-img {
+        border-radius: 50%;
+    }
+
+    .item-inner {
+        padding: 0 !important;
+    }
+
+    .label {
+        margin: 0 !important;
+    }
+}

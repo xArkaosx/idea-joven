@@ -1,0 +1,66 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title class="page-title" text-center>Buscar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-searchbar no-padding class="searchbar-style" [(ngModel)]="myInput" (ionInput)="onSearch($event)" (ionCancel)="onCancel($event)"
+    (ionClear)="onClear($event)" [showCancelButton]="true" [cancelButtonText]="x" type="search" autocomplete="on" autocorrect="on"
+    placeholder="Buscar Ej. Música, Cena...">
+  </ion-searchbar>
+
+  <ion-item text-center>
+    <ion-title class="busquedas-header">Búsquedas Recientes</ion-title>
+  </ion-item>
+
+  <ion-card no-padding class="searchcard">
+    <ion-row class="card-row">
+      <ion-col col-3 no-padding>
+        <button class="img-container" ion-item no-padding full>
+          <ion-item width="100%" no-padding style="background: rgba(0,0,0,0);">
+            <img class="search-img" src="assets/imgs/santiago_iglesia.jpg" height="100%" />
+          </ion-item>
+        </button>
+      </ion-col>
+      <ion-col col-7 no-padding>
+        <ion-item no-padding class="text-item">
+          <h1 ion-text text-wrap class="card-header">Pueblo Mágico de Santiago</h1>
+          <p class="card-subheader">en Santiago, N.L.</p>
+        </ion-item>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button icon-only clear full>
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card no-padding class="searchcard">
+      <ion-row class="card-row">
+        <ion-col col-3 no-padding>
+          <button class="img-container" ion-item no-padding full>
+            <ion-item width="100%" no-padding style="background: rgba(0,0,0,0);">
+              <img class="search-img" src="assets/imgs/cueva_murcielagos.jpg" height="100%" />
+            </ion-item>
+          </button>
+        </ion-col>
+        <ion-col col-7 no-padding>
+          <ion-item no-padding class="text-item">
+            <h1 ion-text text-wrap class="card-header">Cueva de los Murcielagos</h1>
+            <p class="card-subheader">en Santiago, N.L.</p>
+          </ion-item>
+        </ion-col>
+        <ion-col col-2>
+          <button ion-button icon-only clear full>
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+</ion-content>
