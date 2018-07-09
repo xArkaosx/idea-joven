@@ -1,0 +1,121 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title class="page-title" text-center>Explora</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!-- SLIDES -->
+<ion-content class="content-settings">
+  <h1 class="h1-settings" ion-text text-center>Trending en San Nicolas</h1>
+  <div class="slides-div">
+    <ion-slides loop="true">
+      <div *ngFor="let atr of topAtraction">
+        <ion-slide (click)="cardNav()">
+          <div>
+            <img [src]="atr.imageName" />
+          </div>
+          <div>
+            <ion-row>
+              <ion-col col-6>
+                <h1 class="h1-slides">
+                  {{atr.headerText}}
+                </h1>
+              </ion-col>
+              <ion-col col-6>
+                <h1 class="h1-slides">{{atr.stars}}
+                  <ion-icon name="thumbs-up"></ion-icon>
+                </h1>
+              </ion-col>
+            </ion-row>
+            <p class="p-slides" text-wrap>{{atr.subText}}</p>
+          </div>
+        </ion-slide>
+      </div>
+    </ion-slides>
+  </div>
+
+  <!-- CATEGORÍAS EXPERIENCIAS -->
+  <h1 text-center class="exp-text">Categorías</h1>
+
+  <ion-row>
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/extremo.jpg" (click)="categoriaNav('experiencias')" />
+        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('experiencias')">
+          <b class="btn-text" text-wrap>Experiencias</b>
+        </button>
+      </div>
+    </ion-col>
+
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/romantico.jpg" (click)="categoriaNav('Romántico')" />
+        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('romantico')">
+          <b class="btn-text" text-wrap>Romántico</b>
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/gastronomia.jpg" (click)="categoriaNav('Gastronomía')" />
+        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('gastronomia')">
+          <b class="btn-text" text-wrap>Gastronomía</b>
+        </button>
+      </div>
+    </ion-col>
+
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/musica.jpg" (click)="categoriaNav('Música')" />
+        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('musica')">
+          <b class="btn-text" text-wrap>Música</b>
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/deportes.jpg" (click)="categoriaNav('Deportes')" />
+        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('deportes')">
+          <b class="btn-text" text-wrap>Deportes</b>
+        </button>
+      </div>
+    </ion-col>
+
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/pasado.jpg" (click)="categoriaNav('Viaje al Pasado')" />
+        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('pasado')">
+          <b class="btn-text" text-wrap>Viaje al Pasado</b>
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/regio.jpg" (click)="categoriaNav('Regio')" />
+        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('regio')">
+          <b class="btn-text" text-wrap>Regio</b>
+        </button>
+      </div>
+    </ion-col>
+
+    <ion-col class="column" no-padding>
+      <div class="wrapper">
+        <img src="assets/imgs/otras.jpg" (click)="categoriaNav('Otras')" />
+        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('otras')">
+          <b class="btn-text" text-wrap>Otras</b>
+        </button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
