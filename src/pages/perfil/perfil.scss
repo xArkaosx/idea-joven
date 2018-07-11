@@ -7,19 +7,16 @@ page-perfil {
     font-size: 7px !important;
     color: color($colors, primary);
   }
-  
   .name-pp {
     div {
-        padding: 0 !important;
-        
-        div {
-            ion-label {
-                margin: 0 !important;
-            }
+      padding: 0 !important;
+      div {
+        ion-label {
+          margin: 0 !important;
         }
+      }
     }
   }
-
   .profile-pic {
     align-items: center;
     height: 25%;
@@ -37,13 +34,11 @@ page-perfil {
   }
   .badges-container {
     padding-left: 10px;
-    padding-right: 10px;
-    // margin-bottom: 0px;
+    padding-right: 10px; // margin-bottom: 0px;
     padding-top: 5px;
-    height: 60px;
+    height: 80px;
     width: 100%;
     ion-scroll {
-
       img {
         border-radius: 50%;
         padding-left: 5px;
@@ -53,16 +48,10 @@ page-perfil {
     }
   }
   .ionscroll {
-      
     .scroll-content {
       padding: 0px !important;
     }
-
     width: 100%;
     height: 100%;
-
   }
-  // .profile-item {
-  //     border-bottom: 1px solid grey !important;
-  // }
 }
