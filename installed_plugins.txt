@@ -1,0 +1,5 @@
+npm install firebase angularfire2 --save
+ionic cordova plugin add cordova-sqlite-storage
+npm install --save @ionic/storage
+ionic cordova plugin add cordova-plugin-screen-orientation --save 
+npm install --save @ionic-native/screen-orientation

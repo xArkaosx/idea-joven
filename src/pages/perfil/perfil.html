@@ -1,0 +1,72 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title class="page-title" text-center>Perfil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <ion-item no-padding class="name-pp">
+    <ion-row class="profile-pic">
+      <ion-col col-4 align-self-center>
+        <div class="profile-img-container">
+          <img src="assets/imgs/profile-pic.jpg" />
+        </div>
+      </ion-col>
+      <ion-col col-8 text-end align-self-center>
+        <h1>Luis Liévano</h1>
+        <p>¡Haz vivido 120 experiencias!</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="badges-container">
+      <div text-end>
+        <p style="padding-bottom: 5px">Mis insignias</p>
+      </div>
+      <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
+        <img src="assets/imgs/badge_1.png" />
+        <img src="assets/imgs/badge_2.png" />
+        <img src="assets/imgs/badge_3.png" />
+        <img src="assets/imgs/badge_4.png" />
+        <img src="assets/imgs/badge_5.png" />
+        <img src="assets/imgs/badge_6.png" />
+        <img src="assets/imgs/badge_7.png" />
+        <img src="assets/imgs/badge_8.png" />
+      </ion-scroll>
+    </ion-row>
+  </ion-item>
+
+  <ion-list inset>
+    <button ion-item icon-start>
+      <ion-icon name="brush" item-start></ion-icon>
+      Editar perfil
+    </button>
+    <button ion-item icon-start>
+      <ion-icon name="star" item-start></ion-icon>
+      Mis logros
+    </button>
+    <button ion-item icon-start>
+      <ion-icon name="heart" item-start></ion-icon>
+      Favoritos
+    </button>
+    <button ion-item icon-start>
+      <ion-icon name="cash" item-start></ion-icon>
+      Pagos y facturas
+    </button>
+    <button ion-item icon-start>
+      <ion-icon name="cog" item-start></ion-icon>
+      Configuración
+    </button>
+    <button ion-item icon-start>
+      <ion-icon name="log-out" item-start></ion-icon>
+      Cerrar sesión
+    </button>
+  </ion-list>
+
+  <!-- <ion-list inset>
+    <button ion-item *ngFor="let option of options" (click)="optionSelected(option.nav_option)">
+      {{ option.my_option }}
+    </button>
+  </ion-list> -->
+</ion-content>

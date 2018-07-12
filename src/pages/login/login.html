@@ -1,0 +1,19 @@
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Correo Electrónico</ion-label>
+    <ion-input clearInput="true" type="email" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input clearOnEdit="false" type="{{type}}" [(ngModel)]="user.password"></ion-input>
+    <button ion-button clear item-end (click)='showHide()' style="height:32px;">
+        <ion-icon name="{{icon}}" style="font-size:32px;"></ion-icon>
+      </button>
+  </ion-item>
+
+  <button class="login-btn" ion-button block (click)="login(user)">Login</button>
+  <button class="register-btn" ion-button block color="light" (click)="register()">Register</button>
+  
+</ion-content>
