@@ -9,12 +9,15 @@ import { Storage } from '@ionic/storage';
 })
 export class BusquedaPage {
 
+  search_items: Array<{thumb: string, title: string, subtitle: string}> = [];
   public actividades:AngularFireList<any>;
+  search
   
   myInput: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public afDatabase: AngularFireDatabase, private storage: Storage) {
-    this.actividades = afDatabase.list('/actividades');
+  this.search_items.push ({thumb: "assets/imgs/santiago_iglesia.jpg", title: "Pueblo Mágico de Santiago", subtitle: "en Santiago, N.L."});
+  this.search_items.push ({thumb: "assets/imgs/cueva_murcielagos.jpg", title: "Cueva de los Murcielagos", subtitle: "en Santiago, N.L."});
   }
 
   ionViewDidLoad() {
