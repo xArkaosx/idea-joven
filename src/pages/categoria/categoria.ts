@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, PopoverController  } from 'ionic-angular';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { FilterPage } from '../filter/filter';
 
 @Component({
   selector: 'page-categoria',
@@ -8,21 +9,20 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 })
 export class CategoriaPage {
 
+  placeholder: any;
   myCat: string;
   myCatUpper: string;
   categoria: AngularFireList<any>;
+  header_color: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public afDatabase: AngularFireDatabase) {
-    this.myCat = navParams.get('data');
-    this.categoria = afDatabase.list(this.myCat);
-  }
-
-  popView(){
-    this.navCtrl.pop({
-      animate: true,
-      animation: "bounce",
-      direction: "back"
-    })
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public afDatabase: AngularFireDatabase,
+    public popoverCtrl: PopoverController) {
+    this.placeholder = navParams.get('data');
+    this.myCat = this.placeholder.catUrl;
+    this.header_color = this.placeholder.color;
+    // this.categoria = afDatabase.list(this.myCat);
   }
 
   showConsole(){
@@ -31,5 +31,18 @@ export class CategoriaPage {
   
   ionViewDidLoad(){
     this.myCatUpper = this.myCat.charAt(0).toUpperCase() + this.myCat.slice(1);
+  }
+
+  filterOptions(){
+    const popover = this.popoverCtrl.create(FilterPage);
+    popover.present();
+  }
+
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 }

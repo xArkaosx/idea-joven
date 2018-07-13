@@ -23,6 +23,7 @@ import { BusquedaPage } from '../pages/busqueda/busqueda';
 import { ExpressPage } from '../pages/express/express';
 import { CategoriaPage } from '../pages/categoria/categoria';
 import { TemplateCards } from '../pages/cards01/cards01';
+import { FilterPage } from '../pages/filter/filter';
 
 
 
@@ -40,7 +41,8 @@ import { TemplateCards } from '../pages/cards01/cards01';
     TabsPage,
     PlannerPage,
     CategoriaPage,
-    TemplateCards
+    TemplateCards,
+    FilterPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import { TemplateCards } from '../pages/cards01/cards01';
     TabsPage,
     PlannerPage,
     CategoriaPage,
-    TemplateCards
+    TemplateCards,
+    FilterPage
   ],
   providers: [
     StatusBar,
