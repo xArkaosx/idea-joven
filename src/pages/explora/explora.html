@@ -12,11 +12,17 @@
   <div class="slides-div">
     <ion-slides loop="true" pager="true">
       <div *ngFor="let atr of topAtraction">
-        <ion-slide (click)="cardNav()">
-          <div>
-            <img [src]="atr.imageName" />
+        <ion-slide>
+          <ion-fab top right>
+            <button ion-fab mini icon-only color="redheart">
+              <ion-icon name="heart">
+              </ion-icon>
+            </button>
+          </ion-fab>
+          <div (click)="cardNav()">
+            <img [src]="atr.imageName" width="100%" />
           </div>
-          <div>
+          <div (click)="cardNav()">
             <ion-row>
               <ion-col>
                 <h1 text-center class="h1-slides">
@@ -24,7 +30,10 @@
                 </h1>
               </ion-col>
             </ion-row>
-            <p class="p-slides" text-wrap>{{atr.subText}}</p>
+            <ion-row>
+              <p class="p-slides" text-wrap>{{atr.subText}}</p>
+              <!-- <ion-badge item-end>260k</ion-badge> -->
+            </ion-row>
           </div>
         </ion-slide>
       </div>
@@ -32,13 +41,13 @@
   </div>
 
   <!-- CATEGORÍAS EXPERIENCIAS -->
-  <h1 text-center class="exp-text">Categorías</h1>
+  <h1 text-center class="cat-text">Categorías</h1>
 
   <ion-row>
     <ion-col class="column coli" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/extremo.jpg" (click)="categoriaNav('experiencias')" />
-        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('experiencias')">
+        <button class="button-cat button-img" ion-button full no-margin color="primary" (click)="categoriaNav('experiencias', 'primary')">
           <b class="btn-text" text-wrap>Experiencias</b>
         </button>
       </div>
@@ -47,7 +56,7 @@
     <ion-col class="column cold" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/romantico.jpg" (click)="categoriaNav('Romántico')" />
-        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('romantico')">
+        <button no-margin class="button-cat button-img" ion-button block color="romantico" (click)="categoriaNav('romántico', 'romantico')">
           <b class="btn-text" text-wrap>Romántico</b>
         </button>
       </div>
@@ -58,7 +67,7 @@
     <ion-col class="column coli" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/gastronomia.jpg" (click)="categoriaNav('Gastronomía')" />
-        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('gastronomia')">
+        <button class="button-cat button-img" ion-button full no-margin color="comida" (click)="categoriaNav('gastronomia', 'comida')">
           <b class="btn-text" text-wrap>Gastronomía</b>
         </button>
       </div>
@@ -67,7 +76,7 @@
     <ion-col class="column cold" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/musica.jpg" (click)="categoriaNav('Música')" />
-        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('musica')">
+        <button no-margin class="button-cat button-img" ion-button block color="musica" (click)="categoriaNav('musica', 'musica')">
           <b class="btn-text" text-wrap>Música</b>
         </button>
       </div>
@@ -78,7 +87,7 @@
     <ion-col class="column coli" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/deportes.jpg" (click)="categoriaNav('Deportes')" />
-        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('deportes')">
+        <button class="button-cat button-img" ion-button full no-margin color="deportes" (click)="categoriaNav('deportes', 'deportes')">
           <b class="btn-text" text-wrap>Deportes</b>
         </button>
       </div>
@@ -87,18 +96,18 @@
     <ion-col class="column cold" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/pasado.jpg" (click)="categoriaNav('Viaje al Pasado')" />
-        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('pasado')">
+        <button no-margin class="button-cat button-img" ion-button block color="pasado" (click)="categoriaNav('pasado', 'pasado')">
           <b class="btn-text" text-wrap>Viaje al Pasado</b>
         </button>
       </div>
     </ion-col>
   </ion-row>
 
-  <ion-row>
+  <ion-row style="padding-bottom: 5px">
     <ion-col class="column coli" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/regio.jpg" (click)="categoriaNav('Regio')" />
-        <button class="button-cat button-img" ion-button full no-margin color="buttoncolor" (click)="categoriaNav('regio')">
+        <button class="button-cat button-img" ion-button full no-margin color="regio" (click)="categoriaNav('regio', 'regio')">
           <b class="btn-text" text-wrap>Regio</b>
         </button>
       </div>
@@ -107,7 +116,7 @@
     <ion-col class="column cold" no-padding>
       <div class="wrapper">
         <img src="assets/imgs/otras.jpg" (click)="categoriaNav('Otras')" />
-        <button no-margin class="button-cat button-img" ion-button block (click)="categoriaNav('otras')">
+        <button no-margin class="button-cat button-img" ion-button block color="otras" (click)="categoriaNav('otras', 'otras')">
           <b class="btn-text" text-wrap>Otras</b>
         </button>
       </div>
