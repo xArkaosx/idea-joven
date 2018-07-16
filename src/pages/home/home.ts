@@ -32,17 +32,20 @@ export class HomePage {
   }
 */
   //------------------------  Objetos para cada carta -------------------------------
-    I_Rex() {
+    Cat_Adventuras() {
       this.navCtrl.push(TemplateCards, {
-        IRex: true
+        Adventuras: true
       });
     }
-
-    S_pino() {
+    Cat_Gastronomia() {
       this.navCtrl.push(TemplateCards, {
-      Spino: true 
+        Gastronomia: true 
       });
     }
-
+    Cat_Souvenir() {
+      this.navCtrl.push(TemplateCards, {
+        Souvenir: true
+      })
+    }
 }
 

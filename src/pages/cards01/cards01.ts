@@ -9,12 +9,15 @@ import { NavController, NavParams } from 'ionic-angular';
 
 export class TemplateCards {
   
-  IRex: boolean;
-  Spino: boolean;
+  CatAdventuras: boolean;
+  CatGastronomia: boolean;
+  CatSouvenir: boolean;
+
   constructor(public navCtrl: NavController, 
     public navParams: NavParams) {
-      this.IRex = this.navParams.get('IRex')
-      this.Spino = this.navParams.get('Spino')
+      this.CatAdventuras = this.navParams.get('Adventuras')
+      this.CatGastronomia = this.navParams.get('Gastronomia')
+      this.CatSouvenir = this.navParams.get('Souvenir')
   }
 
 }

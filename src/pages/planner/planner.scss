@@ -3,4 +3,10 @@ page-planner {
         font-size: 7px !important;
         color: color($colors, primary);
     }
+    .card-informacion {
+        font-size: 10px; 
+        position: absolute;
+        top: 1%;
+        width: 100%;    
+    }
 }
