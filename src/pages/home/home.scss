@@ -3,15 +3,13 @@ page-home {
     font-size: 7px !important;
     color: color($colors, primary);
   }
+  //Clases para el scroll de las cartas a horizontal
   .scroll-zoom-wrapper {
     white-space: nowrap;
   }
   .home-card {
     width: 77% !important;
     display: inline-block;
-  }
-  .head-card {
-    width: 100%;
   }
   .ionscroll {
     min-height: 100%;
@@ -20,6 +18,7 @@ page-home {
       padding: 0px !important;
     }
   }
+  //Clases para la informacion dentro de las cartas
   .font-titles-cards {
     font-size: 25px;
     color: green;
@@ -37,13 +36,10 @@ page-home {
     top: 8%;
     font-weight: bold;
     font-size: 20px;
-    color: blue;
   }
-  .font-suba {
-    position: absolute;
-    top: 70%;
-    left: 55%;
+  .font-url {
+    position: relative;
     font-size: 12px;
-    color: blue;
+    color: black;
   }
 }
