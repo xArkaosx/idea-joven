@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Ordenar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+
+  <!-- <ion-list>
+
+    <ion-item>
+      <ion-label>Por popularidad</ion-label>
+      <ion-checkbox [(ngModel)]="popularidad"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cerca de mi</ion-label>
+      <ion-checkbox [(ngModel)]="cerca"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Por precio</ion-label>
+      <ion-checkbox [(ngModel)]="precio"></ion-checkbox>
+    </ion-item>
+
+  </ion-list> -->
+
+  <ion-list radio-group [(ngModel)]="relationship">
+    <ion-item>
+      <ion-label>Por popularidad</ion-label>
+      <ion-radio color="musica" value="popularidad" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cerca de mi</ion-label>
+      <ion-radio color="musica" value="cerca"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Por precio</ion-label>
+      <ion-radio color="musica" value="precio"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

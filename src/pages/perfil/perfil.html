@@ -20,9 +20,9 @@
         <p>¡Haz vivido 120 experiencias!</p>
       </ion-col>
     </ion-row>
-    <ion-row class="badges-container">
+    <ion-row class="badges-container" justify-content-end>
       <div text-end>
-        <p style="padding-bottom: 5px">Mis insignias</p>
+        <p style="padding-bottom: 5px; color:goldenrod">Mis insignias</p>
       </div>
       <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
         <img src="assets/imgs/badge_1.png" />
@@ -38,7 +38,7 @@
   </ion-item>
 
   <ion-list inset>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="goToProfilePage()">
       <ion-icon name="brush" item-start></ion-icon>
       Editar perfil
     </button>

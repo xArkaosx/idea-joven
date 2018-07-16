@@ -20,18 +20,21 @@ page-home {
   }
   //Clases para la informacion dentro de las cartas
   .font-titles-cards {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 25px;
+    color: green;
   }
   .font-paragraph-cards {
-    font-size: 14px;
-    color: black;
+    font-size: 12px;
     white-space: normal;
   }
-  //Clases para los apartados de cada seccion
-  .font-headers-cards {
-    position: relative;
-    left: 2%;
+  .font-par {
+    font-size: 25px;
+    color: gray;
+  }
+  .font-a {
+    position: absolute;
+    top: 8%;
+    font-weight: bold;
     font-size: 20px;
   }
   .font-url {

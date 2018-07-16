@@ -1,0 +1,36 @@
+page-actividad {
+  ion-header {
+    .toolbar {
+      position: absolute;
+      .toolbar-background {
+        background: transparent;
+      }
+      .toolbar-title {
+        color: black;
+      }
+    }
+  }
+
+  .div-padding {
+    padding: 5px 0px 5px 10px;
+    div {
+      h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  
+  .costo {
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .descripcion {
+    font-size: 18px;
+  }
+
+  .add-plans {
+    height: 50px;
+  }
+}

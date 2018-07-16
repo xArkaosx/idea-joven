@@ -10,6 +10,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 
+// PAGINAS
 import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
@@ -23,8 +24,13 @@ import { BusquedaPage } from '../pages/busqueda/busqueda';
 import { ExpressPage } from '../pages/express/express';
 import { CategoriaPage } from '../pages/categoria/categoria';
 import { TemplateCards } from '../pages/cards01/cards01';
-
-
+import { FilterPage } from '../pages/filter/filter';
+import { EditarPerfilPage } from '../pages/editar-perfil/editar-perfil';
+import { ConfiguracionPage } from '../pages/configuracion/configuracion';
+import { FacturasPage } from '../pages/facturas/facturas';
+import { FavoritosPage } from '../pages/favoritos/favoritos';
+import { LogrosPage } from '../pages/logros/logros';
+import { ActividadPage } from '../pages/actividad/actividad';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,14 @@ import { TemplateCards } from '../pages/cards01/cards01';
     TabsPage,
     PlannerPage,
     CategoriaPage,
-    TemplateCards
+    TemplateCards,
+    FilterPage,
+    EditarPerfilPage,
+    ConfiguracionPage,
+    FacturasPage,
+    FavoritosPage,
+    LogrosPage,
+    ActividadPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +81,14 @@ import { TemplateCards } from '../pages/cards01/cards01';
     TabsPage,
     PlannerPage,
     CategoriaPage,
-    TemplateCards
+    TemplateCards,
+    FilterPage,
+    EditarPerfilPage,
+    ConfiguracionPage,
+    FacturasPage,
+    FavoritosPage,
+    LogrosPage,
+    ActividadPage
   ],
   providers: [
     StatusBar,
