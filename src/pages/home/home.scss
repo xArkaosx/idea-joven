@@ -3,15 +3,13 @@ page-home {
     font-size: 7px !important;
     color: color($colors, primary);
   }
+  //Clases para el scroll de las cartas a horizontal
   .scroll-zoom-wrapper {
     white-space: nowrap;
   }
   .home-card {
     width: 77% !important;
     display: inline-block;
-  }
-  .head-card {
-    width: 100%;
   }
   .ionscroll {
     min-height: 100%;
@@ -20,34 +18,25 @@ page-home {
       padding: 0px !important;
     }
   }
+  //Clases para la informacion dentro de las cartas
   .font-titles-cards {
-    font-style: italic;
-    font-family: 'Times New Roman';
-    font-size: 25px;
-    color: green;
+    font-size: 18px;
+    font-weight: bold;
   }
   .font-paragraph-cards {
-    font-family: Helvetica;
-    font-size: 12px;
+    font-size: 14px;
+    color: black;
     white-space: normal;
   }
-  .font-par {
-    font-size: 25px;
-    font-family: fantasy;
-    color: gray;
-  }
-  .font-a {
-    position: absolute;
-    top: 8%;
-    font-weight: bold;
+  //Clases para los apartados de cada seccion
+  .font-headers-cards {
+    position: relative;
+    left: 2%;
     font-size: 20px;
-    color: blue;
   }
-  .font-suba {
-    position: absolute;
-    top: 70%;
-    left: 55%;
+  .font-url {
+    position: relative;
     font-size: 12px;
-    color: blue;
+    color: black;
   }
 }

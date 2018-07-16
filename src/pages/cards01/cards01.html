@@ -8,16 +8,22 @@
       </ion-header>
 
 
-<!-- Informacion que se muestra al seleccionar al Indominus Rex-->
+<!-- Informacion que se muestra al seleccionar "Ver mas" en Aventuras -->
 <ion-content padding>
-  <div *ngIf="IRex">
-      <p>Tu papá en tanga bailando reggaeton y nadie lo pela</p>
+  <div *ngIf="CatAdventuras">
+      <p>Aqui habra mas informacion y fotos</p>
   </div>
 
-  <!-- Informacion que se muestra al seleccionar al Spinosaurio-->
-  <div *ngIf="Spino">
+<!-- Informacion que se muestra al seleccionar "Ver mas" en Gastronomia -->
+  <div *ngIf="CatGastronomia">
     <p>Perry la perrita</p>  
   </div>
+
+<!-- Informacion que se muestra al seleccionar "Ver mas" en Souvenir -->
+  <div *ngIf="CatSouvenir">
+    <p>Aqui habra mas informacion</p>  
+  </div>
+
 
 
 

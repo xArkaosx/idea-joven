@@ -9,34 +9,32 @@
 
 <ion-content no-padding>
 
+<img src="assets/imgs/Principal.jpg" style="height:280px" />
 
-  <ion-card class="head-card">
-    <img src="assets/imgs/Principal.jpg" style="height:280px; width:100%; position:relative" />
-    <div class="font-a">Santiago</div>
-    <div class="font-suba"> Lugar Sobresaliente </div>
-  </ion-card>
 
   <!-- Comienza cartas para "Aventuras"-->
 
-  <h2 style="color:black; font-size:20px">Aventuras</h2>
+  <h2 class="font-headers-cards">Aventuras
+    <button ion-button clear class="font-url" style="left:49%" (click)="Cat_Adventuras()">Ver mas</button></h2>
+
   <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:340px">
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:280px">
 
       <!-- Primera carta Aventuras (Bungee) -->
-      <ion-card class="home-card" type="button" (click)="I_Rex()" height="300px">
+      <ion-card class="home-card" height="300px">
         <img src="assets/imgs/Aventura01.jpg" tab="Aventura01" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             Bungee
           </ion-card-title>
           <p class="font-paragraph-cards">
-            Una experiencia atractiva para los amantes de los deportes extremos.
+            Una experiencia para los amantes de los deportes extremos.
           </p>
         </ion-card-content>
       </ion-card>
 
       <!-- Segunda carta Aventuras (Cueva de Murcielagos) -->
-      <ion-card class="home-card" type="button" (click)="S_pino()" height="300px">
+      <ion-card class="home-card" height="300px">
         <img src="assets/imgs/Aventura02.jpg" tab="Aventura02" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -56,7 +54,7 @@
             Presa de la Boca
           </ion-card-title>
           <p class="font-paragraph-cards">
-            Tiene una asombrosa vista donde puedes ir a pasar el tiempo y comer.
+            Tiene una asombrosa vista donde puedes ir a pasar el tiempo.
           </p>
         </ion-card-content>
       </ion-card>
@@ -68,12 +66,14 @@
 
   <!-- Comienza cartas para "Gastronomia" -->
 
-  <h2 style="color:black; font-size:20px">Gastronomía</h2>
+  <h2 class="font-headers-cards">Gastronomía
+    <button ion-button clear class="font-url" style="left:42%" (click)="Cat_Gastronomia()">Ver mas</button></h2>
+
   <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:340px">
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:280px">
 
       <!-- Primera carta Gastronomia (Acompañantes de Helados) -->
-      <ion-card height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Gastronomia01.jpg" tab="Gastronomia01" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -86,20 +86,20 @@
       </ion-card>
 
       <!-- Segunda carta Gastronomia (Paletas de nieve) -->
-      <ion-card height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Gastronomia02.jpg" tab="Gastronomia02" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             Paletas Frutales
           </ion-card-title>
           <p class="font-paragraph-cards">
-            Paletas con sabor a frutas frescas.
+            Paletas con sabor a frutas frescas y exoticas.
           </p>
         </ion-card-content>
       </ion-card>
 
       <!-- Tercera carta Gastronomia (Paletas de nieve) -->
-      <ion-card height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Gastronomia03.jpg" tab="Gastronomia03" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -118,12 +118,14 @@
 
   <!-- Comienza cartas para "Souvenir" -->
 
-  <h2 style="color:black; font-size:20px">Souvenir</h2>
+  <h2 class="font-headers-cards">Souvenir
+    <button ion-button clear class="font-url" style="left:53%" (click)="Cat_Souvenir()">Ver mas</button></h2>
+
   <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:340px">
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:280px">
 
       <!-- Primera carta Souvenir (Accesorios y Alebrijes) -->
-      <ion-card type="button" (click)="I_Rex()" height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Souvenir01.jpg" tab="Souvenir01" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -136,7 +138,7 @@
       </ion-card>
 
       <!-- Segunda carta Souvenir (Figuras de Madera) -->
-      <ion-card type="button" (click)="S_pino()" height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Souvenir02.jpg" tab="Souvenir02" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -149,7 +151,7 @@
       </ion-card>
 
       <!-- Tercera carta Souvenir (Piedra y Calaveras) -->
-      <ion-card height="300px">
+      <ion-card class="home-card">
         <img src="assets/imgs/Souvenir03.jpg" tab="Souvenir03" width="100%" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
