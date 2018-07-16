@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, PopoverController  } from 'ionic-angular';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { FilterPage } from '../filter/filter';
+import { ActividadPage } from '../actividad/actividad';
 
 @Component({
   selector: 'page-categoria',
@@ -44,5 +45,13 @@ export class CategoriaPage {
       animation: "bounce",
       direction: "back"
     })
+  }
+
+  goToActivity(){
+    this.navCtrl.push(ActividadPage, {
+      animate: true,
+      animation: "bounce",
+      direction: "forward",
+    });
   }
 }

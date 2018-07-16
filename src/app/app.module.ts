@@ -30,6 +30,7 @@ import { ConfiguracionPage } from '../pages/configuracion/configuracion';
 import { FacturasPage } from '../pages/facturas/facturas';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { LogrosPage } from '../pages/logros/logros';
+import { ActividadPage } from '../pages/actividad/actividad';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { LogrosPage } from '../pages/logros/logros';
     ConfiguracionPage,
     FacturasPage,
     FavoritosPage,
-    LogrosPage
+    LogrosPage,
+    ActividadPage
   ],
   imports: [
     BrowserModule,
@@ -85,7 +87,8 @@ import { LogrosPage } from '../pages/logros/logros';
     ConfiguracionPage,
     FacturasPage,
     FavoritosPage,
-    LogrosPage
+    LogrosPage,
+    ActividadPage
   ],
   providers: [
     StatusBar,
