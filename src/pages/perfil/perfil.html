@@ -11,18 +11,22 @@
   <ion-item no-padding class="name-pp">
     <ion-row class="profile-pic">
       <ion-col col-4 align-self-center>
-        <div class="profile-img-container">
-          <img src="assets/imgs/profile-pic.jpg" />
-        </div>
+        <ion-row justify-content-end align-items-center>
+          <div class="profile-img-container">
+            <img src="assets/imgs/profile-pic.jpg" />
+          </div>
+        </ion-row>
       </ion-col>
       <ion-col col-8 text-end align-self-center>
         <h1>Luis Liévano</h1>
         <p>¡Haz vivido 120 experiencias!</p>
       </ion-col>
     </ion-row>
-    <ion-row class="badges-container" justify-content-end>
+    <ion-row class="badges-container" justify-content-start>
       <div>
-        <p style="padding-bottom: 5px; color:goldenrod">Mis insignias</p>
+        <p style="padding-bottom: 5px;">
+          <i>Mis insignias</i>
+        </p>
       </div>
       <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
         <img src="assets/imgs/badge_1.png" />
@@ -38,27 +42,27 @@
   </ion-item>
 
   <ion-list inset>
-    <button ion-item icon-start (click)="goToProfilePage()">
+    <button ion-item icon-start (click)="goToProfilePage('edit')">
       <ion-icon name="brush" item-start></ion-icon>
       Editar perfil
     </button>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="goToProfilePage('logros')">
       <ion-icon name="star" item-start></ion-icon>
       Mis logros
     </button>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="goToProfilePage('favs')">
       <ion-icon name="heart" item-start></ion-icon>
       Favoritos
     </button>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="goToProfilePage('pagos')">
       <ion-icon name="cash" item-start></ion-icon>
       Pagos y facturas
     </button>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="goToProfilePage('config')">
       <ion-icon name="cog" item-start></ion-icon>
       Configuración
     </button>
-    <button ion-item icon-start>
+    <button ion-item icon-start (click)="logOut()">
       <ion-icon name="log-out" item-start></ion-icon>
       Cerrar sesión
     </button>

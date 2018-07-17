@@ -10,8 +10,12 @@ export class LogrosPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LogrosPage');
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 
 }
