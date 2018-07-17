@@ -1,6 +1,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only clear>
+        <ion-icon name="heart" color="romantico"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -34,7 +39,7 @@
 
   </ion-item>
 
-  <ion-item no-padding>
+  <ion-item padding>
     <div class="div-padding">
       <div text-wrap justify>
         <h2 ion-text>
@@ -54,12 +59,34 @@
       </div>
       <button ion-button block class="add-plans">
         <ion-icon name="add" icon-start>
-          Añadir a mis planes
+          Comprar y añadir a mis planes
         </ion-icon>
       </button>
     </div>
   </ion-item>
-  <ion-item>
+
+  <ion-item no-padding>
+
+    <div class="div-padding">
+
+      <ion-card no-padding>
+        <ion-row class="card-row">
+          <ion-col col-6 no-padding>
+            <img src="assets/imgs/restaurante_santiago.jpg"/>
+          </ion-col>
+          <ion-col col-6 no-padding>
+            <ion-item no-padding text-wrap>
+              <ul>
+                <li>Explorar Cola de Caballo</li>
+                <li>Saltar del Bungee</li>
+                <li>Comer en Hotel Cola de Caballo</li>
+              </ul>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </div>
 
   </ion-item>
 
