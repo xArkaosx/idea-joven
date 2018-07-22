@@ -9,44 +9,66 @@
 
 <ion-content no-padding>
 
-    <ion-fab>
-        <button ion-fab mini style="background-color:yellowgreen" >
-          <ion-icon name="arrow-dropright" style="color:white"></ion-icon></button>
-        <ion-fab-list side="right">
-            <button ion-fab><ion-icon name="ios-calendar-outline"></ion-icon></button>
-            <button ion-fab><ion-icon name="ios-clock-outline"></ion-icon></button>
-            <button ion-fab><ion-icon name="ios-timer-outline"></ion-icon></button>
-          </ion-fab-list>
+    <ion-fab right bottom>
+        <button ion-fab mini style="background-color: white" >
+          <ion-icon name="calendar" style="color: green"></ion-icon></button>
     </ion-fab>
 
 
-  <ion-card style="position: relative">
-    <img src="assets/imgs/Aventura01.jpg" tab="Aventura01" style="width:50%"/>
+  <ion-card class="cards">
+    <img src="assets/imgs/Aventura01.jpg" tab="Aventura01" class="card-imagenes"/>
     <div>
-    <ul class="card-informacion" style="left:45%">
-        <li>Alere Flamman Veritatis</li>
-        <li>Alere Flamman Veritatis</li>
-      </ul>
+      <p class="title-cards" style="bottom: 75%; left: 47%">
+        Nombre de la Actividad
+      </p>
     </div>
-  </ion-card>
-
-  <ion-card style="position: relative">
-      <img src="assets/imgs/Aventura02.jpg" tab="Aventura02" style="width:50%"/>
       <div>
-      <ul class="card-informacion" style="left:45%">
+        <ul class="card-informacion" style="left:37%">
           <li>Alere Flamman Veritatis</li>
           <li>Alere Flamman Veritatis</li>
         </ul>
       </div>
+    <div>
+        <ion-datetime class="card-time" displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+        <ion-datetime class="card-date" displayFormat="DD/MM/YYYY"></ion-datetime>
+    </div>
   </ion-card>
 
-  <ion-card style="position: relative">
-        <img src="assets/imgs/Aventura03.jpg" tab="Aventura03" style="width:50%"/>
+  <ion-card class="cards">
+      <img src="assets/imgs/Aventura02.jpg" tab="Aventura02" class="card-imagenes"/>
+      <div>
+          <p class="title-cards" style="bottom: 75%; left: 47%">
+            Nombre de la Actividad
+          </p>
+      </div>
+      <div>
+      <ul class="card-informacion" style="left:37%">
+          <li>Alere Flamman Veritatis</li>
+          <li>Alere Flamman Veritatis</li>
+        </ul>
+      </div>
+      <div>
+          <ion-datetime class="card-time" displayFormat="h:mm A" pickerFormat="h mm A">Establece la hora </ion-datetime>
+          <ion-datetime class="card-date" displayFormat="DD/MM/YYYY"> Establece la fecha </ion-datetime>
+      </div>
+  </ion-card>
+
+  <ion-card class="cards">
+        <img src="assets/imgs/Aventura03.jpg" tab="Aventura03" class="card-imagenes"/>
         <div>
-        <ul class="card-informacion" style="left:45%">
+            <p class="title-cards" style="bottom: 75%; left: 47%">
+              Nombre de la Actividad
+            </p>
+        </div>
+        <div>
+        <ul class="card-informacion" style="left:37%">
             <li>Alere Flamman Veritatis</li>
             <li>Alere Flamman Veritatis</li>
           </ul>
+        </div>
+        <div>
+            <ion-datetime class="card-time" displayFormat="h:mm A" pickerFormat="h mm A">Establece la hora </ion-datetime>
+            <ion-datetime class="card-date" displayFormat="DD/MM/YYYY"> Establece la fecha </ion-datetime>
         </div>
     </ion-card>
 
