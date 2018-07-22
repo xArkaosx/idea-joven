@@ -22,6 +22,7 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 $tabs-height: 40px !default;
+// $background-color: #2e2e2e;
 
 
 
@@ -35,12 +36,26 @@ $tabs-height: 40px !default;
 
 $colors: (
   primary:    #51a305,
+  // primary:    #555555,
+  // primary:    #ff9100,
+  // primary:    #18cc00,
   primary-dark: #c2181e,
   secondary:  #fff100,
   danger:     #f53d3d,
   light:      #f4f4f4,
+  whitecustom:  #fff,
   dark:       #222,
-  buttoncolor:(base:#b1ffbe, contrast:#fff)
+  redheart:   #ff3769,
+  bluecompass: (base: #2c69ec, contrast:  #fff),
+  romantico:    (base: #ff3344, contrast:  #fff),
+  pasado:       (base: #705f51, contrast:  #fff),
+  comida:       (base: #ffd000, contrast:  #fff),
+  // musica:     (base: #222, contrast:  #fff),
+  // musica:     (base: #2c69ec, contrast:  #fff),
+  musica:     (base: #0836a9, contrast:  #fff),
+  deportes:   (base: #6100cf, contrast:  #fff),
+  regio:      (base: #ff7e28, contrast:  #fff),
+  otras:      (base: #1bdd6c, contrast:  #fff),
 );
 
 

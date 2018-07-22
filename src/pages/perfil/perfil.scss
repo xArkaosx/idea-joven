@@ -34,11 +34,13 @@ page-perfil {
   }
   .badges-container {
     padding-left: 10px;
-    padding-right: 10px; // margin-bottom: 0px;
+    padding-right: 10px;
+    margin-bottom: 5px;
     padding-top: 5px;
     height: 80px;
     width: 100%;
     ion-scroll {
+      margin-top: 2px;
       img {
         border-radius: 50%;
         padding-left: 5px;
