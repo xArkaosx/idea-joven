@@ -18,25 +18,29 @@ page-home {
       padding: 0px !important;
     }
   }
-  //Clases para la informacion dentro de las cartas
-  .font-titles-cards {
-    font-size: 25px;
-    color: green;
-  }
-  .font-paragraph-cards {
-    font-size: 12px;
-    white-space: normal;
-  }
-  .font-par {
-    font-size: 25px;
-    color: gray;
-  }
-  .font-a {
-    position: absolute;
-    top: 8%;
-    font-weight: bold;
+  //Clases para los apartados de cada seccion
+  .font-headers-cards {
+    position: relative;
+    left: 2%;
     font-size: 20px;
   }
+  .font-boton {
+    position: relative;
+    font-size: 12px;
+    bottom: 10%;
+    color: black;
+  }
+  //Clases para la informacion dentro de las cartas
+  .font-titles-cards {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .font-paragraph-cards {
+    font-size: 14px;
+    color: black;
+    white-space: normal;
+
   .font-url {
     font-size: 12px;
     color: black;
@@ -49,5 +53,6 @@ page-home {
   
   .ver-mas-container {
     height: 100%;
+
   }
 }

@@ -6,7 +6,43 @@ page-planner {
     .card-informacion {
         font-size: 10px; 
         position: absolute;
-        top: 1%;
+        top: 15%;
         width: 100%;    
+    }
+    .card-imagenes {
+        position: relative;
+        width: 120px;
+        height: 80px;
+        left: 3%;
+        top: 9%;
+    }
+
+    .title-cards {
+        font-weight: bold; 
+        font-size: 12px; 
+        position: absolute; 
+        color:black;
+    }
+
+    .cards {
+        position: relative;
+        height: 100px;
+    }
+
+    .card-date {
+        position: absolute;
+        font-size: 9px;
+        font-weight: bold;
+        top: 75%;
+        left: 75%;
+    }
+
+    .card-time{
+        font-size: 8px;
+        position: absolute;
+        font-size: 9px;
+        font-weight: bold;
+        top: 75%;
+        left: 59%;
     }
 }
