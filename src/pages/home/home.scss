@@ -35,9 +35,24 @@ page-home {
     font-size: 18px;
     font-weight: bold;
   }
+
   .font-paragraph-cards {
     font-size: 14px;
     color: black;
     white-space: normal;
+
+  .font-url {
+    font-size: 12px;
+    color: black;
+    margin-right: 6px;
+  }
+  
+  .font-headers-cards {
+    padding-left: 7px;
+  }
+  
+  .ver-mas-container {
+    height: 100%;
+
   }
 }

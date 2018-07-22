@@ -10,8 +10,12 @@ export class EditarPerfilPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EditarPerfilPage');
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 
 }

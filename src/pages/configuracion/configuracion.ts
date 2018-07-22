@@ -10,8 +10,12 @@ export class ConfiguracionPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ConfiguracionPage');
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 
 }

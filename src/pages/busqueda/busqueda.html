@@ -18,7 +18,7 @@
   </ion-item>
 
   <div *ngFor="let item of search_items">
-    <ion-card no-padding class="searchcard">
+    <ion-card no-padding>
       <ion-row class="card-row">
         <ion-col col-3 no-padding>
           <button class="img-container" ion-item no-padding full>
@@ -28,7 +28,7 @@
           </button>
         </ion-col>
         <ion-col col-7 no-padding>
-          <ion-item no-padding class="text-item">
+          <ion-item no-padding>
             <h1 ion-text text-wrap class="card-header">{{item.title}}</h1>
             <p class="card-subheader">{{item.subtitle}}</p>
           </ion-item>
