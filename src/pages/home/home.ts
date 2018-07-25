@@ -27,14 +27,22 @@ export class HomePage {
     this.Souvenir.push({imageName: "assets/imgs/Souvenir02.jpg", headerText: "Figuras de Madera", subText: "Figuras de diferentes tipos estructuras hechos de maderas."})
     this.Souvenir.push({imageName: "assets/imgs/Souvenir03.jpg", headerText: "Piedras Decorativas", subText: "Piedras preciosas para decorar o usar como accesarios."})
   }
-/*
-  ionViewWillEnter(){
-   this.afAuth.authState.subscribe(data => {
-     if(data && data.email && data.uid) {
-     this.toast.create({
-       message: "Welcome to APP_NAME, ${data.email}", 
-       duration: 3000
-     }).present();
+  /*
+    ionViewWillEnter(){
+     this.afAuth.authState.subscribe(data => {
+       if(data && data.email && data.uid) {
+       this.toast.create({
+         message: "Welcome to APP_NAME, ${data.email}", 
+         duration: 3000
+       }).present();
+      }
+      else {
+        this.toast.create({
+          message: "Could not find authentication email", 
+          duration: 3000
+        }).present();
+      }
+     });
     }
     else {
       this.toast.create({

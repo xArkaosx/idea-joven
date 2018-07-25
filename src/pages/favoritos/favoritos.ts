@@ -10,8 +10,12 @@ export class FavoritosPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FavoritosPage');
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 
 }

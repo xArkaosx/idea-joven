@@ -20,7 +20,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content no-padding>
 
   <ion-fab top right no-padding>
     <button ion-fab icon-only mini color="{{header_color}}" (click)="filterOptions()">
@@ -28,7 +28,7 @@
     </button>
   </ion-fab>
 
-  <ion-card no-padding (click)="goToActivity()">
+  <ion-card (click)="goToActivity()">
     <img src="assets/imgs/romantico.jpg" />
     <ion-card-content>
       <ion-card-title>

@@ -11,6 +11,12 @@ page-actividad {
     }
   }
 
+  // img {
+  //   position: absolute;
+  //   clip: rect(0px, 60px, 200px, 0px);
+  //   width: 100%;
+  // }
+
   .div-padding {
     padding: 5px 0px 5px 10px;
     div {
@@ -20,7 +26,7 @@ page-actividad {
       }
     }
   }
-  
+
   .costo {
     font-size: 18px;
     padding: 0px;
@@ -30,7 +36,12 @@ page-actividad {
     font-size: 18px;
   }
 
-  .add-plans {
-    height: 50px;
+  // .add-plans {
+  //   height: 50px;
+  // }
+
+  .card-row {
+    width: 100% !important;
+    align-items: center;
   }
 }

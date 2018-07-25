@@ -10,8 +10,12 @@ export class FacturasPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FacturasPage');
+  popPage(){
+    this.navCtrl.pop({
+      animate: true,
+      animation: "bounce",
+      direction: "back"
+    })
   }
 
 }
