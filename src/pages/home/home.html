@@ -9,32 +9,28 @@
 
 <ion-content no-padding>
 
-<img src="assets/imgs/Principal.jpg" style="height:280px" />
+  <img src="assets/imgs/Principal.jpg" style="height:280px"/>
 
-
-  <!-- Comienza cartas para "Aventuras"-->
-
-  <h2 class="font-headers-cards">Aventuras
-    <button ion-button small class="font-boton" style="left:46%" (click)="Cat_Adventuras()">Ver mas</button></h2>
+  <h2 class="font-headers-cards">Recomendados
+    <button ion-button small class="font-boton" style="left:30%" (click)="Recomendados()">Ver mas</button></h2>
 
   <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="height:290px">
-
-      <!-- Primera carta Aventuras (Bungee) -->
-      <ion-card class="home-card" height="300px">
-        <img src="assets/imgs/Aventura01.jpg"/>
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
+    <!-- Primera carta Recomendados -->
+      <ion-card class="home-card">
+        <img src="assets/imgs/Souvenir01.jpg"/>
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
-            Bungee
+            Accesorios y Alebrijes
           </ion-card-title>
           <p class="font-paragraph-cards">
-            Una experiencia para los amantes de los deportes extremos.
+            Recuerdos de buena calidad para recordar su visita.
           </p>
         </ion-card-content>
       </ion-card>
 
-      <!-- Segunda carta Aventuras (Cueva de Murcielagos) -->
-      <ion-card class="home-card" height="300px">
+    <!-- Segunda carta Recomendados -->
+      <ion-card class="home-card">
         <img src="assets/imgs/Aventura02.jpg"/>
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
@@ -46,59 +42,7 @@
         </ion-card-content>
       </ion-card>
 
-      <!-- Tercera carta Aventuras (Presa de la Boca) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Aventura03.jpg"/>
-        <ion-card-content>
-          <ion-card-title class="font-titles-cards">
-            Presa de la Boca
-          </ion-card-title>
-          <p class="font-paragraph-cards">
-            Tiene una asombrosa vista donde puedes ir a pasar el tiempo.
-          </p>
-        </ion-card-content>
-      </ion-card>
-
-    </ion-scroll>
-  </div>
-
-  <!-- Termina cartas para "Aventuras" -->
-
-  <!-- Comienza cartas para "Gastronomia" -->
-
-  <h2 class="font-headers-cards">Gastronomía
-    <button ion-button small class="font-boton" style="left:39%" (click)="Cat_Gastronomia()">Ver mas</button></h2>
-
-  <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:290px">
-
-      <!-- Primera carta Gastronomia (Acompañantes de Helados) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Gastronomia01.jpg"/>
-        <ion-card-content>
-          <ion-card-title class="font-titles-cards">
-            Chispas y Granola
-          </ion-card-title>
-          <p class="font-paragraph-cards">
-            Acompañamientos deliciosos para el helados.
-          </p>
-        </ion-card-content>
-      </ion-card>
-
-      <!-- Segunda carta Gastronomia (Paletas de nieve) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Gastronomia02.jpg"/>
-        <ion-card-content>
-          <ion-card-title class="font-titles-cards">
-            Paletas Frutales
-          </ion-card-title>
-          <p class="font-paragraph-cards">
-            Paletas con sabor a frutas frescas y exoticas.
-          </p>
-        </ion-card-content>
-      </ion-card>
-
-      <!-- Tercera carta Gastronomia (Paletas de nieve) -->
+    <!-- Tercera carta Recomendados -->
       <ion-card class="home-card">
         <img src="assets/imgs/Gastronomia03.jpg"/>
         <ion-card-content>
@@ -114,58 +58,68 @@
     </ion-scroll>
   </div>
 
-  <!-- Termina cartas para "Gastronomia" -->
 
-  <!-- Comienza cartas para "Souvenir" -->
-
-  <h2 class="font-headers-cards">Souvenir
-    <button ion-button small class="font-boton" style="left:50%" (click)="Cat_Souvenir()">Ver mas</button></h2>
+  <!-- Apartado de "Aventuras" -->
+  <h2 class="font-headers-cards">Aventuras
+    <button ion-button small class="font-boton" style="left:45%" (click)="Categorias('experiencias','primary')">Ver mas</button></h2>
 
   <div>
-    <ion-scroll class="ionscroll" scrollX="true" scrollY="true" style="width:100%; height:290px">
-
-      <!-- Primera carta Souvenir (Accesorios y Alebrijes) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Souvenir01.jpg"/>
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
+    <!-- Propiedades de la Carta -->
+      <ion-card class="home-card" *ngFor="let atr of Aventuras">
+        <img [src]="atr.imageName"/>
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
-            Accesorios y Alebrijes
+            {{atr.headerText}}
           </ion-card-title>
           <p class="font-paragraph-cards">
-            Recuerdos de buena calidad para recordar su visita.
+            {{atr.subText}}
           </p>
         </ion-card-content>
       </ion-card>
-
-      <!-- Segunda carta Souvenir (Figuras de Madera) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Souvenir02.jpg"/>
-        <ion-card-content>
-          <ion-card-title class="font-titles-cards">
-            Figuras de Madera
-          </ion-card-title>
-          <p class="font-paragraph-cards">
-            Figuras de diferentes tipos estructuras hechos de maderas.
-          </p>
-        </ion-card-content>
-      </ion-card>
-
-      <!-- Tercera carta Souvenir (Piedra y Calaveras) -->
-      <ion-card class="home-card">
-        <img src="assets/imgs/Souvenir03.jpg"/>
-        <ion-card-content>
-          <ion-card-title class="font-titles-cards">
-            Piedras Decorativas
-          </ion-card-title>
-          <p class="font-paragraph-cards">
-            Piedras preciosas para decorar o usar como accesarios.
-          </p>
-        </ion-card-content>
-      </ion-card>
-
     </ion-scroll>
   </div>
 
-  <!-- Termina cartas para "Souvenir" -->
+  <!-- Apartado de "Gastronomia" -->
+  <h2 class="font-headers-cards">Gastronomía
+    <button ion-button small class="font-boton" style="left:38%" (click)="Categorias('gastronomia','comida')">Ver mas</button></h2>
+
+  <div>
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
+    <!-- Propiedades de la Carta -->
+      <ion-card class="home-card" *ngFor="let atr of Gastronomia">
+        <img [src]="atr.imageName"/>
+        <ion-card-content>
+          <ion-card-title class="font-titles-cards">
+            {{atr.headerText}}
+          </ion-card-title>
+          <p class="font-paragraph-cards">
+            {{atr.subText}}
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-scroll>
+  </div>
+
+  <!-- Apartado de "Souvenir" -->
+  <h2 class="font-headers-cards">Souvenir
+    <button ion-button small class="font-boton" style="left:49%" (click)="Categorias('otras','otras')">Ver mas</button></h2>
+
+  <div>
+    <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
+    <!-- Propiedades de la Carta -->
+      <ion-card class="home-card" *ngFor="let atr of Souvenir">
+        <img [src]="atr.imageName"/>
+        <ion-card-content>
+          <ion-card-title class="font-titles-cards">
+            {{atr.headerText}}
+          </ion-card-title>
+          <p class="font-paragraph-cards">
+            {{atr.subText}}
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-scroll>
+  </div>
 
 </ion-content>
