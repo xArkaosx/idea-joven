@@ -9,16 +9,18 @@
 
 <ion-content no-padding>
 
-  <img src="assets/imgs/Principal.jpg" style="height:280px"/>
+
+  <img src="assets/imgs/Principal.jpg" style="height:280px" />
 
   <h2 class="font-headers-cards">Recomendados
-    <button ion-button small class="font-boton" style="left:30%" (click)="Recomendados()">Ver mas</button></h2>
+    <button ion-button small class="font-boton" style="left:30%" (click)="Recomendados()">Ver mas</button>
+  </h2>
 
   <div>
     <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
-    <!-- Primera carta Recomendados -->
+      <!-- Primera carta Recomendados -->
       <ion-card class="home-card">
-        <img src="assets/imgs/Souvenir01.jpg"/>
+        <img src="assets/imgs/Souvenir01.jpg" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             Accesorios y Alebrijes
@@ -29,9 +31,9 @@
         </ion-card-content>
       </ion-card>
 
-    <!-- Segunda carta Recomendados -->
+      <!-- Segunda carta Recomendados -->
       <ion-card class="home-card">
-        <img src="assets/imgs/Aventura02.jpg"/>
+        <img src="assets/imgs/Aventura02.jpg" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             Cueva de Murcielagos
@@ -42,9 +44,9 @@
         </ion-card-content>
       </ion-card>
 
-    <!-- Tercera carta Recomendados -->
+      <!-- Tercera carta Recomendados -->
       <ion-card class="home-card">
-        <img src="assets/imgs/Gastronomia03.jpg"/>
+        <img src="assets/imgs/Gastronomia03.jpg" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             Paletas de Nieve
@@ -61,13 +63,14 @@
 
   <!-- Apartado de "Aventuras" -->
   <h2 class="font-headers-cards">Aventuras
-    <button ion-button small class="font-boton" style="left:45%" (click)="Categorias('experiencias','primary')">Ver mas</button></h2>
+    <button ion-button small class="font-boton" style="left:45%" (click)="Categorias('experiencias','primary')">Ver mas</button>
+  </h2>
 
   <div>
     <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
-    <!-- Propiedades de la Carta -->
+      <!-- Propiedades de la Carta -->
       <ion-card class="home-card" *ngFor="let atr of Aventuras">
-        <img [src]="atr.imageName"/>
+        <img [src]="atr.imageName" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             {{atr.headerText}}
@@ -82,13 +85,14 @@
 
   <!-- Apartado de "Gastronomia" -->
   <h2 class="font-headers-cards">Gastronomía
-    <button ion-button small class="font-boton" style="left:38%" (click)="Categorias('gastronomia','comida')">Ver mas</button></h2>
+    <button ion-button small class="font-boton" style="left:38%" (click)="Categorias('gastronomia','comida')">Ver mas</button>
+  </h2>
 
   <div>
     <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
-    <!-- Propiedades de la Carta -->
+      <!-- Propiedades de la Carta -->
       <ion-card class="home-card" *ngFor="let atr of Gastronomia">
-        <img [src]="atr.imageName"/>
+        <img [src]="atr.imageName" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             {{atr.headerText}}
@@ -103,13 +107,14 @@
 
   <!-- Apartado de "Souvenir" -->
   <h2 class="font-headers-cards">Souvenir
-    <button ion-button small class="font-boton" style="left:49%" (click)="Categorias('otras','otras')">Ver mas</button></h2>
+    <button ion-button small class="font-boton" style="left:49%" (click)="Categorias('otras','otras')">Ver mas</button>
+  </h2>
 
   <div>
     <ion-scroll class="ionscroll" scrollX="true" scrollY="true">
-    <!-- Propiedades de la Carta -->
+      <!-- Propiedades de la Carta -->
       <ion-card class="home-card" *ngFor="let atr of Souvenir">
-        <img [src]="atr.imageName"/>
+        <img [src]="atr.imageName" />
         <ion-card-content>
           <ion-card-title class="font-titles-cards">
             {{atr.headerText}}

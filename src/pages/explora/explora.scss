@@ -3,13 +3,13 @@ page-explora {
     top: 10px;
     bottom: inherit;
     .swiper-pagination-bullet {
-      background: color($colors, primary);
+      background: white;
       margin: 0 3px;
     }
   }
 
   .slides-div {
-    border-bottom: 1px solid #c0c0c0;
+    border-bottom: 1px solid #dfdfdf;
   }
 
   .h1-settings {

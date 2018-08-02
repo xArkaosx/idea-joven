@@ -10,38 +10,167 @@ page-actividad {
       }
     }
   }
-
-  // img {
+  .img-container {
+    position: relative;
+  }
+  .fade-over {
+    z-index: 2;
+    position: absolute;
+    background: transparent;
+    top: 0%;
+    left: 0%;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  } // img {
   //   position: absolute;
   //   clip: rect(0px, 60px, 200px, 0px);
   //   width: 100%;
   // }
-
-  .div-padding {
-    padding: 5px 0px 5px 10px;
-    div {
-      h2 {
-        font-size: 20px;
-        padding-bottom: 5px;
-      }
-    }
+  .div-container {
+    padding: 0px 15px 0px 15px;
   }
-
+  .div-padding {
+    padding: 0px 5px 0px 5px;
+  }
+  .section-header {
+    background-image: url("../assets/imgs/huichol1.png");
+    background-size: 100% 100%;
+    background-color: grey;
+    height: 33px;
+    padding-left: 20px;
+    display: flex !important;
+    align-content: center !important;
+    align-items: center !important;
+  }
+  .fotos-container {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .costo-container {
+    display: flex !important;
+    align-content: center !important;
+    align-items: center !important;
+    padding: 0px;
+    margin: 0px 10px 0px 10px;
+  }
   .costo {
     font-size: 18px;
-    padding: 0px;
+    padding: 0px 0px 0px 10px;
   }
-
+  .add-plans {
+    background-color: orangered;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
   .descripcion {
     font-size: 18px;
   }
-
-  // .add-plans {
-  //   height: 50px;
-  // }
-
   .card-row {
     width: 100% !important;
     align-items: center;
+  }
+
+  ion-scroll {
+    white-space: nowrap;
+    height: 90px;
+  }
+  .ionscroll {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    .scroll-content {
+      padding: 0px !important;
+    }
+  }
+  .badges-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    height: 100px;
+    width: 100%;
+    ion-scroll {
+      margin-top: 2px;
+    }
+  }
+  .act-thumb-div {
+    display: inline-block;
+  }
+  .wrapper {
+    position: relative;
+  }
+  .img-act {
+    border-radius: 50%;
+    height: 66px;
+    z-index: 2;
+    position: absolute;
+    background: transparent;
+    top: 0%;
+    left: 0%;
+    margin: 3px;
+  } 
+
+  hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid royalblue;
+    margin: 1em 0;
+    padding: 0;
+  }
+  // MAP
+  #map {
+    width: 100%;
+    height: 200px;
+  }
+  #mapatext {
+    font-size: 20px;
+    padding: 5px 0px 5px 10px;
+  } //!-- MAP
+  .tips-container {
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  div.swiper-pagination {
+    .swiper-pagination-bullet {
+      background: white;
+      margin: 0 3px;
+    }
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .act-thumb {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .act-number {
+    z-index: 2;
+    position: absolute;
+    background: transparent;
+    top: 60%;
+    left: 60%;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: royalblue;
+    border-style: solid;
+    background-color: white;
+    font-weight: bold;
+    color: royalblue;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    align-content: center;
   }
 }
