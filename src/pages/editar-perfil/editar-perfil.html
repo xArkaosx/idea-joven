@@ -17,9 +17,35 @@
       </ion-row>
     </ion-navbar>
   
-  </ion-header>
+</ion-header>
 
+<!-- Datos de usuario -->
+<ion-content no-padding>
 
-<ion-content padding>
+  <ion-item>
+    <ion-label floating> Nombre </ion-label>
+    <ion-input [(ngModel)]="profile.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating> Apellidos </ion-label>
+    <ion-input [(ngModel)]="profile.apellido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating> Edad </ion-label>
+      <ion-input [(ngModel)]="profile.edad"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sexo</ion-label>
+      <ion-select [(ngModel)]="sexo">
+        <ion-option value="f">Femenino</ion-option>
+        <ion-option value="m">Masculino</ion-option>
+        <ion-option value="o">Otro</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <button ion-button clear block (click)="createProfile()"> Guardar Datos </button>
 
 </ion-content>

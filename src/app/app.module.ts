@@ -55,7 +55,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     FavoritosPage,
     LogrosPage,
     ActividadPage,
-    CalendarioPage
+    CalendarioPage,
   ],
   imports: [
     BrowserModule,
@@ -91,7 +91,8 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     FavoritosPage,
     LogrosPage,
     ActividadPage,
-    CalendarioPage
+    CalendarioPage,
+
   ],
   providers: [
     StatusBar,
