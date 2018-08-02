@@ -3,7 +3,7 @@ page-home {
     font-size: 7px !important;
     color: color($colors, primary);
   }
-  //Clases para el scroll de las cartas a horizontal
+  //Clases para el scroll de las cartas horizontales
   .scroll-zoom-wrapper {
     white-space: nowrap;
   }
@@ -13,7 +13,7 @@ page-home {
   }
   .ionscroll {
     min-height: 100%;
-    height: 100%;
+    height: 300px;
     .scroll-content {
       padding: 0px !important;
     }
@@ -54,5 +54,6 @@ page-home {
   .ver-mas-container {
     height: 100%;
 
+    white-space: normal;  
   }
 }
