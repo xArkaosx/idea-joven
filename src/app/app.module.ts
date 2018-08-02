@@ -31,6 +31,7 @@ import { FacturasPage } from '../pages/facturas/facturas';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { LogrosPage } from '../pages/logros/logros';
 import { ActividadPage } from '../pages/actividad/actividad';
+import { CalendarioPage } from '../pages/calendario/calendario';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ActividadPage } from '../pages/actividad/actividad';
     FacturasPage,
     FavoritosPage,
     LogrosPage,
-    ActividadPage
+    ActividadPage,
+    CalendarioPage,
   ],
   imports: [
     BrowserModule,
@@ -88,7 +90,9 @@ import { ActividadPage } from '../pages/actividad/actividad';
     FacturasPage,
     FavoritosPage,
     LogrosPage,
-    ActividadPage
+    ActividadPage,
+    CalendarioPage,
+
   ],
   providers: [
     StatusBar,

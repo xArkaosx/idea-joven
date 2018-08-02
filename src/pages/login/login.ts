@@ -34,28 +34,28 @@ export class LoginPage {
     }).present();
   }
 
-  // async login(user: User) {
-  //   if (!this.user.email || !this.user.password) {
-  //     let toast = this.toastCtrl.create({
-  //       message: 'You forgot to put your Username or Password',
-  //       duration: 3000
-  //     });
-  //     toast.present();
-  //   } else {
-  //     this.afAuth.auth.signInWithEmailAndPassword(this.user.email, this.user.password)
-  //       .then(data => {
-  //         console.log('got some data', data);
-  //         this.navCtrl.setRoot(TabsPage);
-  //         //user is logged in
-  //       })
-  //       .catch(error => {
-  //         console.log('got an error', error);
-  //         this.alert('Error!', error.message);
-  //       })
+//   async login(user: User) {
+//     if (!this.user.email || !this.user.password) {
+//       let toast = this.toastCtrl.create({
+//         message: 'You forgot to put your Username or Password',
+//         duration: 3000
+//       });
+//       toast.present();
+//     } else {
+//       this.afAuth.auth.signInWithEmailAndPassword(this.user.email, this.user.password)
+//         .then(data => {
+//           console.log('got some data', data);
+//           this.navCtrl.setRoot(TabsPage);
+//           //user is logged in
+//         })
+//         .catch(error => {
+//           console.log('got an error', error);
+//           this.alert('Error!', error.message);
+//         })
 
-  //     console.log('Would sign in with:', this.user.email, ' & ', this.user.password);
-  //   }
-  // }
+//       console.log('Would sign in with:', this.user.email, ' & ', this.user.password);
+//    }
+//   }
 
   register() {
     this.navCtrl.push(RegisterPage);
