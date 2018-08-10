@@ -21,35 +21,15 @@
     "@angular/http": "5.2.10",
     "@angular/platform-browser": "5.2.10",
     "@angular/platform-browser-dynamic": "5.2.10",
-<<<<<<< HEAD
-    "@ionic-native/core": "4.7.0",
-=======
     "@ionic-native/camera": "^4.11.0",
     "@ionic-native/core": "^4.11.0",
     "@ionic-native/google-maps": "^4.9.1",
     "@ionic-native/launch-navigator": "^4.11.0",
     "@ionic-native/screen-orientation": "^4.9.1",
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     "@ionic-native/splash-screen": "4.7.0",
     "@ionic-native/status-bar": "4.7.0",
     "@ionic/storage": "^2.1.3",
     "angularfire2": "^5.0.0-rc.9",
-<<<<<<< HEAD
-    "cordova-android": "7.0.0",
-    "cordova-ios": "4.5.4",
-    "cordova-plugin-device": "^2.0.2",
-    "cordova-plugin-ionic-keyboard": "^2.1.2",
-    "cordova-plugin-ionic-webview": "^1.2.1",
-    "cordova-plugin-splashscreen": "^5.0.2",
-    "cordova-plugin-whitelist": "^1.3.3",
-    "css-ripple-effect": "^1.0.5",
-    "firebase": "^5.0.3",
-    "ionic-angular": "3.9.2",
-    "ionicons": "3.0.0",
-    "ios": "0.0.1",
-    "rxjs": "5.5.10",
-    "sw-toolbox": "3.6.0",
-=======
     "com.googlemaps.ios": "~2.7.0",
     "cordova-android": "^7.0.0",
     "cordova-ios": "4.5.4",
@@ -76,7 +56,6 @@
     "sw-toolbox": "3.6.0",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.2.1",
     "xml2js": "^0.4.19",
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     "zone.js": "0.8.26"
   },
   "devDependencies": {
@@ -90,9 +69,6 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-<<<<<<< HEAD
-      "cordova-plugin-ionic-keyboard": {}
-=======
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-screen-orientation": {},
       "cordova-plugin-googlemaps": {
@@ -114,15 +90,10 @@
         "LOCATION_USAGE_DESCRIPTION": "This app requires access to your location for navigation purposes"
       },
       "cordova-plugin-camera": {}
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     },
     "platforms": [
       "ios",
       "android"
     ]
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
