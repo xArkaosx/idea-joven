@@ -4,6 +4,9 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { PerfilPage } from '../perfil/perfil';
 import { Profile } from '../../models/profile';
+import { storage, initializeApp} from 'firebase';
+import { FIREBASE_CONFIG } from '../../app/app.firebase.config';
+import { Camera, CameraOptions, MediaType } from "@ionic-native/camera";
 
 @Component({
   selector: 'page-editar-perfil',
@@ -13,8 +16,9 @@ export class EditarPerfilPage {
 
   profile = {} as Profile;  
 
-  constructor(private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
+  constructor(private camera: Camera, private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
     public navCtrl: NavController, public navParams: NavParams) {
+      initializeApp(FIREBASE_CONFIG);
   }
 
   popPage(){
@@ -30,6 +34,27 @@ export class EditarPerfilPage {
       this.afDatabase.object(`profile/${auth.uid}`).set(this.profile)
       .then(() => this.popPage())
     })
+  }
+
+  async takePhoto() {
+    try {
+      const options: CameraOptions = {
+        quality: 50,
+        targetHeight: 600,
+        targetWidth: 600,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE
+      }
+      const result = await this.camera.getPicture(options);
+      const image = `data:image/jpeg;base64,${result}`;
+
+      const pictures = storage().ref('pictures');
+      pictures.putString(image, 'data_url');
+    }
+    catch (e) {
+      console.error(e);
+    }
   }
 
 }

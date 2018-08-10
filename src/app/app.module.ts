@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
+import { Camera } from '@ionic-native/camera';
 
 //Providers n Stuff
 import { AngularFireModule } from 'angularfire2';
@@ -102,6 +103,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     SplashScreen,
     GoogleMaps,
     LaunchNavigator,
+    Camera,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
