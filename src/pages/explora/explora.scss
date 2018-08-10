@@ -1,4 +1,5 @@
 page-explora {
+<<<<<<< HEAD
 
     .slides-div {
         height: 53%;
@@ -108,4 +109,120 @@ page-explora {
     .btn-text {
         font-size: 20px;
     }
+=======
+  div.swiper-pagination {
+    top: 10px;
+    bottom: inherit;
+    .swiper-pagination-bullet {
+      background: white;
+      margin: 0 3px;
+    }
+  }
+
+  .slides-div {
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  .h1-settings {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  .h1-slides {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+  .h2-settings {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .title-settings {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left !important;
+    overflow-wrap: break-word !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .paragraph-settings {
+    text-align: left !important;
+    font-size: 12px;
+    overflow-wrap: break-word !important;
+    padding-top: 0px !important;
+    color: dark;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .p-slides {
+    text-align: left !important;
+    font-size: 15px;
+    overflow-wrap: break-word !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    color: dark;
+    margin: 0px 5px 5px 5px;
+  }
+  .page-title {
+    font-size: 7px !important;
+    color: color($colors, primary);
+  }
+  .column {
+    float: right;
+    width: 50%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .button-cat {
+    height: 0 !important;
+    width: 100%;
+    padding-top: 28.125% !important;
+    margin-top: 0px !important;
+    padding-bottom: 28.125% !important;
+    margin-bottom: 0px !important;
+  }
+  .button-img {
+    z-index: 2;
+    position: absolute;
+    background: transparent;
+    top: 0%;
+    left: 0%;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  .wrapper {
+    position: relative;
+    margin-top: 5px;
+  }
+  .coli {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .cold {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  .cat-text {
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .btn-text {
+    font-size: 20px;
+  }
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 }

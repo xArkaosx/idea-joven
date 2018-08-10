@@ -33,3 +33,9 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+<<<<<<< HEAD
+=======
+src/app/app.firebase.config.ts
+pendientes de app alfa luis lievano  11 de julio.txt
+pendientes cruz.txt
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b

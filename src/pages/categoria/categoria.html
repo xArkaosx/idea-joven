@@ -1,12 +1,77 @@
 <ion-header>
 
+<<<<<<< HEAD
   <ion-navbar color="primary">
     <ion-title class="page-title" text-center>{{myCatUpper}}</ion-title>
+=======
+  <ion-navbar hideBackButton="true" color="{{header_color}}">
+    <ion-row align-items-center>
+      <ion-col col-2>
+        <ion-buttons>
+          <button ion-button icon-only clear full class="backnav-btn" (click)="popPage()">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-col>
+      <ion-col col-8>
+        <ion-title class="page-title" text-center>{{myCatUpper}}</ion-title>
+      </ion-col>
+      <ion-col col-2>
+      </ion-col>
+    </ion-row>
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
   </ion-navbar>
 
 </ion-header>
 
 
+<<<<<<< HEAD
 <ion-content padding>
   <button ion-button (click)="showConsole()"></button>
+=======
+<ion-content no-padding>
+
+  <ion-fab top right no-padding>
+    <button ion-fab icon-only mini color="{{header_color}}" (click)="filterOptions()">
+      <ion-icon name="funnel"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-card (click)="goToActivity()">
+    <img src="assets/imgs/romantico.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        La Nacional
+      </ion-card-title>
+      <p>
+        El mejor restaurante de carnes de monterrey.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/restaurante_santiago.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        El Restaurante
+      </ion-card-title>
+      <p>
+        Una cena diferente ubicada en el hermoso centro de Santiago.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/bungee_coladecaballo.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        Bungee Cola de Caballo
+      </ion-card-title>
+      <p>
+        No hay mejor manera de acelerar su corazón que saltando de un bungee en la cola de caballo.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 </ion-content>

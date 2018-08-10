@@ -1,0 +1,53 @@
+<ion-header>
+
+    <ion-navbar hideBackButton="true" color="primary">
+      <ion-row align-items-center>
+        <ion-col col-2>
+          <ion-buttons>
+            <button ion-button icon-only clear full class="backnav-btn" (click)="popPage()">
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-8>
+          <ion-title class="page-title" text-center>Editar Perfil</ion-title>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+    </ion-navbar>
+  
+</ion-header>
+
+<!-- Datos de usuario -->
+<ion-content no-padding>
+
+  <ion-item>
+    <ion-label floating> Nombre </ion-label>
+    <ion-input [(ngModel)]="profile.nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating> Apellidos </ion-label>
+    <ion-input [(ngModel)]="profile.apellido"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating> Edad </ion-label>
+      <ion-input [(ngModel)]="profile.edad"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sexo</ion-label>
+      <ion-select [(ngModel)]="sexo">
+        <ion-option value="f">Femenino</ion-option>
+        <ion-option value="m">Masculino</ion-option>
+        <ion-option value="o">Otro</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <button ion-button (click)="takePhoto()"> Foto de Perfil </button>
+  
+  <button ion-button color="bluecompass" block (click)="createProfile()"> Guardar Datos </button>
+
+</ion-content>

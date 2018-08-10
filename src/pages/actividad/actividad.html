@@ -1,0 +1,414 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only clear>
+        <ion-icon name="share"></ion-icon>
+      </button>
+      <button ion-button icon-only clear>
+        <ion-icon name="heart" color="romantico"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+
+  <div class="img-container">
+    <img src="assets/imgs/calaberas.jpg" width="100%" />
+    <img class="fade-over" src="assets/imgs/fade.png" height="100%" width="100%" />
+  </div>
+
+  <ion-item no-padding>
+    <div class="div-padding">
+      <ion-row nowrap align-items-center>
+        <ion-col>
+          <h1 ion-text text-start>Pueblo Mágico</h1>
+        </ion-col>
+        <ion-col text-end>
+          <p>122,220
+            <ion-icon name="heart" mini color="romantico"></ion-icon>
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <p>
+          <ion-icon name="compass" mini color="bluecompass"></ion-icon>
+          Santiago, N.L.
+        </p>
+      </ion-row>
+    </div>
+
+  </ion-item>
+
+  <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>¿Qué voy a hacer?</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div class="div-container">
+    <div class="div-padding">
+      <div text-wrap>
+        <p class="descripcion">Experimentaras el folclore de Nuevo León desde una perspectiva diferente a la normal. Sentirás la adrenalina correr
+          por tus venas en el salto bungee de la cola de caballo, probarás la comida típica del municipio de Santiago en
+          "inserte nombre de restuarante aquí", y acabarás contemplando las estrellas en "inserte lugar donde ver estrellas
+          aquí".
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <ion-row class="costo-container">
+    <ion-col col-5>
+      <div text-start>
+        <p class="costo">
+          <b>Costo</b>
+          <br>$500.00 MXN</p>
+      </div>
+    </ion-col>
+    <ion-col col-7>
+      <ion-row justify-content-center>
+        <button ion-button text-wrap class="add-plans">
+          Comprar y añadir a mis planes
+        </button>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <!-- <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>Fotos</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div class="div-container">
+    <div class="fotos-container">
+      <ion-slides autoplay="3000" loop="true" pager="true">
+        slidesPerView="2" spaceBetween="7px"
+        <ion-slide>
+          <img src="assets/imgs/santiago_1.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_2.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_3.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_4.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_5.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_6.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_7.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_8.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_9.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_10.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_11.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_12.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_13.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_14.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_15.jpg">
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div> -->
+
+  <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>Itinerario</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <!-- <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>Mapa</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+
+  </div> -->
+  <div #map id="map" data-tap-disabled="true"></div>
+
+  <div class="div-padding" style="padding-bottom: 8px; padding-top: 8px">
+    <ion-card>
+
+      <!-- Agregar aquí talvez slides en vez de una imágen nadamas? -->
+      <ion-slides autoplay="3000" loop="true" pager="true">
+        <!--slidesPerView="2" spaceBetween="7px"-->
+        <ion-slide>
+          <img src="assets/imgs/santiago_1.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_2.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_3.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_4.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_5.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_6.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_7.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_8.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_9.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_10.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_11.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_12.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_13.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_14.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/santiago_15.jpg">
+        </ion-slide>
+      </ion-slides>
+
+
+
+      <ion-item>
+        <ion-row>
+          <ion-col col-3 align-content-center justify-content-center>
+            <div class="wrapper">
+              <img class="act-thumb" src="assets/imgs/santiago_1.jpg" />
+              <p class="act-number">1</p>
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <h2>Plaza de Santiago</h2>
+            <p>11 N. Way St, Madison, WI 53703</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+
+      <ion-item>
+        <ion-row>
+          <ion-col col-3 align-content-center justify-content-center>
+            <div class="wrapper">
+              <img class="act-thumb" src="assets/imgs/santiago_2.jpg" />
+              <p class="act-number">2</p>
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <h2>Casa con chucherías</h2>
+            <p>14 S. Hop Avenue, Madison, WI 53703</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+
+      <ion-item>
+        <ion-row>
+          <ion-col col-3 align-content-center justify-content-center>
+            <div class="wrapper">
+              <img class="act-thumb" src="assets/imgs/santiago_3.jpg" />
+              <p class="act-number">3</p>
+            </div>
+          </ion-col>
+          <ion-col col-9>
+            <h2>Casa azúl</h2>
+            <p>14 S. Hop Avenue, Madison, WI 53703</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+
+      <!-- ESTO QUEDARA OCULTO A MENOS QUE SE PIQUE EL BOTÓN DE VER MÁS -->
+      <div *ngIf='showMore'>
+        <ion-item>
+          <ion-row>
+            <ion-col col-3 align-content-center justify-content-center>
+              <div class="wrapper">
+                <img class="act-thumb" src="assets/imgs/santiago_4.jpg" />
+                <p class="act-number">4</p>
+              </div>
+            </ion-col>
+            <ion-col col-9>
+              <h2>Daniela viendo pinturas</h2>
+              <p>14 S. Hop Avenue, Madison, WI 53703</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item>
+          <ion-row>
+            <ion-col col-3 align-content-center justify-content-center>
+              <div class="wrapper">
+                <img class="act-thumb" src="assets/imgs/santiago_5.jpg" />
+                <p class="act-number">5</p>
+              </div>
+            </ion-col>
+            <ion-col col-9>
+              <h2>Dinosaurio RAWR</h2>
+              <p>14 S. Hop Avenue, Madison, WI 53703</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item>
+          <ion-row>
+            <ion-col col-3 align-content-center justify-content-center>
+              <div class="wrapper">
+                <img class="act-thumb" src="assets/imgs/santiago_6.jpg" />
+                <p class="act-number">6</p>
+              </div>
+            </ion-col>
+            <ion-col col-9>
+              <h2>Fuente chidori</h2>
+              <p>14 S. Hop Avenue, Madison, WI 53703</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item>
+          <ion-row>
+            <ion-col col-3 align-content-center justify-content-center>
+              <div class="wrapper">
+                <img class="act-thumb" src="assets/imgs/santiago_7.jpg" />
+                <p class="act-number">7</p>
+              </div>
+            </ion-col>
+            <ion-col col-9>
+              <h2>Caritas en la pared</h2>
+              <p>14 S. Hop Avenue, Madison, WI 53703</p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+      </div>
+
+      <ion-item>
+        <span item-start>8 hr</span>
+        <span item-start>(4.6 km)</span>
+        <button ion-button icon-start clear item-end color="bluecompass" (click)='showHide()'>
+          <ion-icon name="{{icon}}"></ion-icon>
+          {{mostrar}}
+        </button>
+      </ion-item>
+
+    </ion-card>
+  </div>
+
+
+  <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>Reglas</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div class="div-container">
+    <div class="div-padding">
+      <ion-item>
+        <ion-icon name="alert" color="secondary" item-start large></ion-icon>
+        <h2>No ser feo</h2>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="close-circle" color="primary-dark" item-start large></ion-icon>
+        <h2>Prohibido tirar basura</h2>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="close-circle" color="primary-dark" item-start large></ion-icon>
+        <h2>Prohibido acampar</h2>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <ion-row align-self-center no-padding no-margin>
+      <ion-col no-padding no-margin>
+        <h2 style="font-size: 20px; padding-bottom: 7px;">
+          <b>Tips</b>
+        </h2>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div class="div-container">
+    <div class="tips-container">
+      <ion-slides autoplay="3000" loop="true" pager="true">
+        <!--slidesPerView="2" spaceBetween="7px"-->
+        <ion-slide>
+          <img src="assets/imgs/tip-01.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/tip-02.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/tip-03.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/tip-04.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/tip-05.png">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/tip-06.png">
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+  </div>
+
+</ion-content>

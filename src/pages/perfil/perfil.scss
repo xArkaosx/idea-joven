@@ -1,3 +1,63 @@
 page-perfil {
+<<<<<<< HEAD
 
+=======
+  ion-scroll {
+    white-space: nowrap;
+    height: 250px;
+  }
+  .page-title {
+    font-size: 7px !important;
+    color: color($colors, primary);
+  }
+  .name-pp {
+    div {
+      padding: 0 !important;
+      div {
+        ion-label {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+  .profile-pic {
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+  }
+  .profile-img-container {
+    // margin-left: 10px;
+    vertical-align: middle;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .badges-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    height: 80px;
+    width: 100%;
+    ion-scroll {
+      margin-top: 2px;
+      img {
+        border-radius: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 45px;
+      }
+    }
+  }
+  .ionscroll {
+    .scroll-content {
+      padding: 0px !important;
+    }
+    width: 100%;
+    height: 100%;
+  }
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 }

@@ -27,7 +27,11 @@ export class ExploraPage {
     }).present();
   }
 
+<<<<<<< HEAD
   categoriaNav(catUrl: string){
+=======
+  categoriaNav(catUrl: string, color: string){
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     // this.navCtrl.push(CategoriaPage, {
     //   data: catUrl
     // },
@@ -39,7 +43,14 @@ export class ExploraPage {
 
     let nav = this.app.getRootNav();
     nav.push(CategoriaPage, {
+<<<<<<< HEAD
       data: catUrl
+=======
+      data: {
+        catUrl,
+        color
+      }
+>>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     },
     {
       animate: true,
