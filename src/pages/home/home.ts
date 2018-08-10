@@ -1,35 +1,13 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { NavController, NavParams, ToastController } from 'ionic-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
-import { TemplateCards } from '../cards01/cards01';
-=======
 import { NavController, NavParams, ToastController, App } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { TemplateCards } from '../cards01/cards01';
 import { CategoriaPage } from '../categoria/categoria';
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
 })
-<<<<<<< HEAD
-export class HomePage {
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams,
-    private afAuth: AngularFireAuth,
-    private toast: ToastController) {
-  }
-/*
-  ionViewWillEnter(){
-   this.afAuth.authState.subscribe(data => {
-     if(data && data.email && data.uid) {
-     this.toast.create({
-       message: "Welcome to APP_NAME, ${data.email}", 
-       duration: 3000
-     }).present();
-=======
 export class HomePage { 
   Aventura: boolean;
   Aventuras: Array<{imageName: string, headerText: string, subText: string}> = [];
@@ -65,7 +43,6 @@ export class HomePage {
         }).present();
       }
      });
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     }
     else {
       this.toast.create({
@@ -76,20 +53,6 @@ export class HomePage {
    });
   }
 */
-<<<<<<< HEAD
-  //------------------------  Objetos para cada carta -------------------------------
-    I_Rex() {
-      this.navCtrl.push(TemplateCards, {
-        IRex: true
-      });
-    }
-
-    S_pino() {
-      this.navCtrl.push(TemplateCards, {
-      Spino: true 
-      });
-    }
-=======
 
   //------------------------  Objetos para cada carta -------------------------------
   Categorias(catUrl: string, color: string) {
@@ -112,7 +75,6 @@ export class HomePage {
     nav.push(TemplateCards, {
     });
   }
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 }
 
