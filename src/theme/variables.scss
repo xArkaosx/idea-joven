@@ -21,12 +21,8 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-<<<<<<< HEAD
-$tabs-height: 40px !default;
-=======
 $tabs-height: 44px !default;
 // $background-color: #2e2e2e;
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 
 
@@ -39,15 +35,6 @@ $tabs-height: 44px !default;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-<<<<<<< HEAD
-  primary:    #51a305,
-  primary-dark: #c2181e,
-  secondary:  #fff100,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
-  buttoncolor:(base:#b1ffbe, contrast:#fff)
-=======
   // primary: (base: #51a305, contrast: #fff),
   primary:     #ffffff,
   // primary:    #51a305,
@@ -72,7 +59,6 @@ $colors: (
   deportes:   (base: #6100cf, contrast:  #fff),
   regio:      (base: #ff7e28, contrast:  #fff),
   otras:      (base: #1bdd6c, contrast:  #fff),
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 );
 
 
@@ -85,12 +71,9 @@ $tabs-ios-tab-min-height: 47px;
 $toolbar-ios-padding: 0px;
 $toolbar-ios-margin: 0px;
 $button-ios-ripple-background-color: #ffffff;
-<<<<<<< HEAD
-=======
 $text-input-ios-show-focus-highlight: false;
 $tabs-ios-tab-color-active: #18cc00;
 $tabs-ios-tab-color-inactive: #3b3b3b;
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -101,14 +84,11 @@ $tabs-md-tab-min-height: 47px;
 $toolbar-md-padding: 0px;
 $toolbar-md-margin: 0px;
 $button-md-ripple-background-color: #ffffff;
-<<<<<<< HEAD
-=======
 $text-input-md-show-focus-highlight: false;
 $item-md-detail-push-show: true;
 $tabs-md-tab-color-active: #18cc00;
 $tabs-md-tab-color-inactive: #3b3b3b;
 
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 // App Windows Variables
 // --------------------------------------------------
@@ -119,13 +99,10 @@ $tabs-wp-tab-min-height: 47px;
 $toolbar-wp-padding: 0px;
 $toolbar-wp-margin: 0px;
 $button-wp-ripple-background-color: #ffffff;
-<<<<<<< HEAD
-=======
 $text-input-wp-show-focus-highlight: false;
 $item-wp-detail-push-show: true;
 $tabs-wp-tab-color-active: #18cc00;
 $tabs-wp-tab-color-inactive: #3b3b3b;
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 
 // App Theme
 // --------------------------------------------------

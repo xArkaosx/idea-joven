@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-=======
 import { NavController, NavParams, ToastController, AlertController } from 'ionic-angular';
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
 import { User } from '../../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 
@@ -14,22 +10,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 export class RegisterPage {
 
   user = {} as User;
-<<<<<<< HEAD
-
-
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams, 
-    private afAuth: AngularFireAuth ) {
-  }
-
-  async register(user: User){
-    try {
-      const result = await this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password);
-      console.log(result);
-    }
-    catch (e) {
-      console.error(e);
-=======
   repassword: any;
 
   constructor(public navCtrl: NavController,
@@ -63,7 +43,6 @@ export class RegisterPage {
     catch (e) {
       console.error(e);
       this.alert('Error: ', e );
->>>>>>> 2ac5041dff03b8c7cc5c3f2e411b0bc05e686a4b
     }
   }
 
