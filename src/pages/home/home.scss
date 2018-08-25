@@ -1,59 +1,110 @@
 page-home {
-  .page-title {
-    font-size: 7px !important;
-    color: color($colors, primary);
-  }
+  // .page-title {
+  //   font-size: 7px !important;
+  //   color: color($colors, primary);
+  // }
   //Clases para el scroll de las cartas horizontales
+  // .master {
+  //   background: url("../../assets/imgs/inicio-background.png");
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }
   .scroll-zoom-wrapper {
     white-space: nowrap;
   }
   .home-card {
-    width: 77% !important;
+    width: 70% !important;
     display: inline-block;
+  }
+  // .card {
+  //   // box-shadow: none !important;
+  // }
+  // .card-content {
+  //   // padding: 0px;
+  // }
+  .button-cat {
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none;
+    font-size: 0.8em;
+    font-weight: 900;
+    background-color: color($colors, pueblomagico) !important;
+    color: white;
+  }
+  .button-cat-gast {
+    padding: 1px;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none;
+    font-size: 0.6em;
+    font-weight: 900;
+    background-color: color($colors, comida) !important;
+    color: white;
+  }
+  .button-cat-aven {
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    background-color: color($colors, experiencias) !important;
+    color: white;
+  }
+  .button-cat-souv {
+    padding: 1px;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    background-color: color($colors, otras) !important;
+    color: white;
   }
   .ionscroll {
     min-height: 100%;
-    height: 300px;
+    height: 46vh;
     .scroll-content {
       padding: 0px !important;
     }
-  }
-  //Clases para los apartados de cada seccion
+  } //Clases para los apartados de cada seccion
   .font-headers-cards {
-    position: relative;
-    left: 2%;
-    font-size: 20px;
+    color: #ff3300;
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0px;
+    padding-left: 7px;
   }
   .font-boton {
-    position: relative;
     font-size: 12px;
-    bottom: 10%;
     color: black;
-  }
-  //Clases para la informacion dentro de las cartas
+  } //Clases para la informacion dentro de las cartas
   .font-titles-cards {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: color($colors, darkergray);
   }
-
+  .hearts {
+    color: #a7a7a7;
+    font-size: 0.9em;
+  }
+  .paragraph-row {
+    height: 75px;
+  }
   .font-paragraph-cards {
     font-size: 14px;
     color: black;
-    white-space: normal;
+    // word-break: normal;
   }
   .font-url {
     font-size: 12px;
     color: black;
     margin-right: 6px;
   }
-  
-  .font-headers-cards {
-    padding-left: 7px;
-  }
-  
   .ver-mas-container {
     height: 100%;
-
-    white-space: normal;  
+    white-space: normal;
   }
 }

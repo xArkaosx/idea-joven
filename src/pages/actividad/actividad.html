@@ -1,12 +1,9 @@
-<ion-header>
+<ion-header [scrollHide]="headerScrollConfig" [scrollContent]="pageContent">
 
   <ion-navbar>
     <ion-buttons end>
-      <button ion-button icon-only clear>
+      <button ion-button icon-only clear style="margin-right: 10px">
         <ion-icon name="share"></ion-icon>
-      </button>
-      <button ion-button icon-only clear>
-        <ion-icon name="heart" color="romantico"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -14,7 +11,7 @@
 </ion-header>
 
 
-<ion-content no-padding>
+<ion-content no-padding #pageContent fullscreen>
 
   <div class="img-container">
     <img src="assets/imgs/calaberas.jpg" width="100%" />
@@ -24,34 +21,49 @@
   <ion-item no-padding>
     <div class="div-padding">
       <ion-row nowrap align-items-center>
-        <ion-col>
-          <h1 ion-text text-start>Pueblo Mágico</h1>
+        <ion-col col-9>
+          <ion-row class="title">
+            <h1 ion-text text-start text-wrap>Pueblo Mágico</h1>
+          </ion-row>
+          <ion-row class="subtitle" align-items-center>
+            <p>
+              <ion-icon name="compass" mini color="bluecompass"></ion-icon>
+              en Santiago, N.L.
+            </p>
+          </ion-row>
         </ion-col>
-        <ion-col text-end>
-          <p>122,220
-            <ion-icon name="heart" mini color="romantico"></ion-icon>
-          </p>
+
+        <ion-col col-3>
+          <ion-row align-items-center justify-content-center>
+              <button ion-fab mini icon-only color="redheart">
+                  <ion-icon name="heart">
+                  </ion-icon>
+                </button>
+          </ion-row>
+          <ion-row align-items-center justify-content-center>
+            <p>122,220
+              <ion-icon name="heart" mini color="romantico"></ion-icon>
+            </p>
+          </ion-row>
+          <ion-row align-items-center justify-content-center>
+            <button class="button-cat" no-shadow ion-button small text-wrap>
+              Pueblo Mágico
+            </button>
+          </ion-row>
         </ion-col>
       </ion-row>
-      <ion-row align-items-center>
-        <p>
-          <ion-icon name="compass" mini color="bluecompass"></ion-icon>
-          Santiago, N.L.
-        </p>
-      </ion-row>
+
     </div>
 
   </ion-item>
 
-  <div class="section-header">
+  <div>
     <ion-row align-self-center no-padding no-margin>
-      <ion-col no-padding no-margin>
-        <h2 style="font-size: 20px; padding-bottom: 7px;">
-          <b>¿Qué voy a hacer?</b>
-        </h2>
-      </ion-col>
+      <h2 style="font-size: 27px" padding>
+        <b>¿Qué voy a hacer?</b>
+      </h2>
     </ion-row>
-
+    <!-- <ion-row padding></ion-row> -->
   </div>
 
   <div class="div-container">
@@ -83,7 +95,7 @@
     </ion-col>
   </ion-row>
 
-  <!-- <div class="section-header">
+  <!-- <div>
     <ion-row align-self-center no-padding no-margin>
       <ion-col no-padding no-margin>
         <h2 style="font-size: 20px; padding-bottom: 7px;">
@@ -147,13 +159,11 @@
     </div>
   </div> -->
 
-  <div class="section-header">
+  <div>
     <ion-row align-self-center no-padding no-margin>
-      <ion-col no-padding no-margin>
-        <h2 style="font-size: 20px; padding-bottom: 7px;">
-          <b>Itinerario</b>
-        </h2>
-      </ion-col>
+        <p class="descripcion"><b>Itinerario</b></p>
+        <!-- <h2 style="font-size: 27px" padding>
+        </h2> -->
     </ion-row>
   </div>
 
@@ -167,7 +177,10 @@
     </ion-row>
 
   </div> -->
-  <div #map id="map" data-tap-disabled="true"></div>
+  <!-- <div #map id="map" data-tap-disabled="true"></div> -->
+  <!-- <div>
+    <ion-img [src]="staticMap" width="100%"></ion-img>
+  </div> -->
 
   <div class="div-padding" style="padding-bottom: 8px; padding-top: 8px">
     <ion-card>
@@ -345,13 +358,11 @@
   </div>
 
 
-  <div class="section-header">
+  <div>
     <ion-row align-self-center no-padding no-margin>
-      <ion-col no-padding no-margin>
-        <h2 style="font-size: 20px; padding-bottom: 7px;">
+        <h2 style="font-size: 27px" padding>
           <b>Reglas</b>
         </h2>
-      </ion-col>
     </ion-row>
 
   </div>
@@ -373,13 +384,11 @@
     </div>
   </div>
 
-  <div class="section-header">
+  <div>
     <ion-row align-self-center no-padding no-margin>
-      <ion-col no-padding no-margin>
-        <h2 style="font-size: 20px; padding-bottom: 7px;">
-          <b>Tips</b>
-        </h2>
-      </ion-col>
+      <h2 style="font-size: 27px" padding>
+        <b>Tips</b>
+      </h2>
     </ion-row>
 
   </div>
