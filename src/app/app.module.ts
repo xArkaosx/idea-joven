@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 import { Camera } from '@ionic-native/camera';
 
+
 //Providers n Stuff
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';

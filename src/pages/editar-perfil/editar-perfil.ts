@@ -7,6 +7,8 @@ import { Profile } from '../../models/profile';
 import { storage, initializeApp} from 'firebase';
 import { FIREBASE_CONFIG } from '../../app/app.firebase.config';
 import { Camera, CameraOptions, MediaType } from "@ionic-native/camera";
+import { Firebase } from '@ionic-native/firebase';
+
 
 @Component({
   selector: 'page-editar-perfil',
@@ -16,7 +18,7 @@ export class EditarPerfilPage {
 
   profile = {} as Profile;  
 
-  constructor(private camera: Camera, private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
+  constructor(private firebase: Firebase, private camera: Camera, private afAuth: AngularFireAuth, private afDatabase: AngularFireDatabase,
     public navCtrl: NavController, public navParams: NavParams) {
       initializeApp(FIREBASE_CONFIG);
   }

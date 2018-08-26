@@ -109,4 +109,5 @@
         <variable name="AIzaSyD7aZdW8ix5vUAjXqQxigxNzFeO_5B4jI4" value="My custom when in use message" />
     </plugin>
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-firebase" spec="^1.0.5" />
 </widget>
