@@ -1,25 +1,28 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, App, ToastController } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
-/**
- * Generated class for the PagarPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
   selector: 'page-pagar',
   templateUrl: 'pagar.html',
 })
 export class PagarPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private app: App, private toastCtrl: ToastController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PagarPage');
+  popPage(){
+    this.navCtrl.pop();
+  }
+
+  transactionCompleted(){
+    let toast = this.toastCtrl.create({
+      message: '¡Pago exitoso!',
+      duration: 3000
+    });
+    toast.present();
+    let nav = this.app.getRootNav(); 
+    nav.setRoot(TabsPage, {tabIndex: 3});
   }
 
 }

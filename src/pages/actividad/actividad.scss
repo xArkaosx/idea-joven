@@ -51,6 +51,11 @@ page-actividad {
     border-color: rgba(0, 0, 0, 0) !important;
     outline: none !important;
     box-shadow: none;
+    font-size: 0.8em;
+    font-weight: 900;
+    background-color: color($colors, otras) !important;
+    color: white;
+    height: 3em;
   }
   .div-padding {
     padding: 0px 5px 0px 5px;

@@ -15,6 +15,7 @@ import {
   Polyline,
   PolylineOptions
 } from '@ionic-native/google-maps';
+import { PagarPage } from '../pagar/pagar';
 
 
 @Component({
@@ -216,5 +217,9 @@ export class ActividadPage {
       this.icon = 'arrow-dropdown';
       this.mostrar = 'mostrar más';
     }
+  }
+
+  goToPay(){
+    this.navCtrl.push(PagarPage);
   }
 }

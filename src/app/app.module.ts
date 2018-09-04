@@ -36,6 +36,7 @@ import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { LogrosPage } from '../pages/logros/logros';
 import { ActividadPage } from '../pages/actividad/actividad';
 import { CalendarioPage } from '../pages/calendario/calendario';
+import { PagarPage } from '../pages/pagar/pagar';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     LogrosPage,
     ActividadPage,
     CalendarioPage,
-    ScrollHideDirective
+    ScrollHideDirective,
+    PagarPage
   ],
   imports: [
     BrowserModule,
@@ -97,7 +99,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     LogrosPage,
     ActividadPage,
     CalendarioPage,
-
+    PagarPage
   ],
   providers: [
     StatusBar,
