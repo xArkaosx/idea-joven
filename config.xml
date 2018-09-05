@@ -95,12 +95,11 @@
     <allow-navigation href="http://192.168.15.7:8100" />
     <allow-navigation href="http://192.168.15.6:8100" />
     <allow-navigation href="http://192.168.1.69:8100" />
-    <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="^7.0.0" />
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.2.1">
         <variable name="OKHTTP_VERSION" value="3.+" />
         <variable name="LOCATION_USAGE_DESCRIPTION" value="This app requires access to your location for navigation purposes" />
     </plugin>
+<<<<<<< HEAD
     <plugin name="cordova-plugin-googlemaps" spec="^2.3.10">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBVo9s4kZWkSL9LJShM6HYgJhFIWWABI4o" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyD7aZdW8ix5vUAjXqQxigxNzFeO_5B4jI4" />
@@ -110,4 +109,8 @@
     </plugin>
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-firebase" spec="^1.0.5" />
+=======
+    <engine name="ios" spec="4.5.4" />
+    <engine name="android" spec="^7.0.0" />
+>>>>>>> c2f75b0aeb96ca0cfdaaf638cc04673bfdf98598
 </widget>

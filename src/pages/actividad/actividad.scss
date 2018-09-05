@@ -31,14 +31,40 @@ page-actividad {
   .div-container {
     padding: 0px 15px 0px 15px;
   }
+  .title {
+    padding-left: 5px;
+    margin-left: 5px;
+    padding-bottom: 3px;
+    h1 {
+      font-weight: bolder;
+      font-size: 3rem;
+    }
+  }
+  .subtitle {
+    padding-left: 5px;
+    margin-left: 5px;
+    p {
+      font-weight: bold;
+    }
+  }
+  .button-cat {
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+    box-shadow: none;
+    font-size: 0.8em;
+    font-weight: 900;
+    background-color: color($colors, otras) !important;
+    color: white;
+    height: 3em;
+  }
   .div-padding {
     padding: 0px 5px 0px 5px;
   }
   .section-header {
     background-image: url("../assets/imgs/huichol1.png");
-    background-size: 100% 100%;
+    background-size: 100%;
     background-color: grey;
-    height: 33px;
+    height: 3px;
     padding-left: 20px;
     display: flex !important;
     align-content: center !important;
@@ -69,12 +95,12 @@ page-actividad {
   }
   .descripcion {
     font-size: 18px;
+    margin: 0px;
   }
   .card-row {
     width: 100% !important;
     align-items: center;
   }
-
   ion-scroll {
     white-space: nowrap;
     height: 90px;
@@ -113,8 +139,7 @@ page-actividad {
     top: 0%;
     left: 0%;
     margin: 3px;
-  } 
-
+  }
   hr {
     display: block;
     height: 3px;
@@ -122,8 +147,7 @@ page-actividad {
     border-top: 1px solid royalblue;
     margin: 1em 0;
     padding: 0;
-  }
-  // MAP
+  } // MAP
   #map {
     width: 100%;
     height: 200px;
@@ -143,18 +167,15 @@ page-actividad {
       margin: 0 3px;
     }
   }
-
   .wrapper {
     position: relative;
   }
-
   .act-thumb {
     object-fit: cover;
     width: 50px;
     height: 50px;
     border-radius: 50%;
   }
-
   .act-number {
     z-index: 2;
     position: absolute;

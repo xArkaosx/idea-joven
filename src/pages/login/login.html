@@ -1,19 +1,60 @@
-<ion-content padding>
+<ion-content padding class="master">
 
+  <div padding>
+    <img src="assets/imgs/mxplore-logo.png" width="80%" />
+  </div>
+
+  <ion-row>
+    <ion-col col-4 no-wrap>
+      <ion-row justify-content-end align-items-center>
+        <p class="input-labels">Usuario</p>
+      </ion-row>
+    </ion-col>
+    <ion-col col-8>
+      <ion-row justify-content-end align-items-center>
+        <ion-item class="input-style" no-lines>
+          <ion-input class="input-item" clearInput="true" type="email" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <!-- 
   <ion-item>
     <ion-label floating>Correo Electrónico</ion-label>
     <ion-input clearInput="true" type="email" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
+  </ion-item> -->
 
-  <ion-item>
+  <ion-row>
+    <ion-col col-4 no-wrap>
+      <ion-row justify-content-end align-items-center>
+        <p class="input-labels">Contraseña</p>
+      </ion-row>
+    </ion-col>
+    <ion-col col-8>
+      <ion-row justify-content-end align-items-center>
+        <ion-item class="input-style" no-lines>
+          <ion-input class="input-item" clearOnEdit="false" type="{{type}}" [(ngModel)]="user.password"></ion-input>
+          <button ion-button clear small item-end (click)='showHide()' style="height:25px;" color="graycustom">
+            <ion-icon name="{{icon}}" style="font-size:15px;"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <!-- <ion-item>
     <ion-label floating>Contraseña</ion-label>
     <ion-input clearOnEdit="false" type="{{type}}" [(ngModel)]="user.password"></ion-input>
-    <button ion-button clear item-end (click)='showHide()' style="height:32px;">
-        <ion-icon name="{{icon}}" style="font-size:32px;"></ion-icon>
-      </button>
-  </ion-item>
+    <button ion-button clear item-end (click)='showHide()' style="height:32px;" color="dark">
+      <ion-icon name="{{icon}}" style="font-size:32px;"></ion-icon>
+    </button>
+  </ion-item> -->
 
-  <button class="login-btn" ion-button block (click)="login(user)">Login</button>
-  <button class="register-btn" ion-button block color="light" (click)="register()">Register</button>
+  <button class="login-btn" ion-button block color="mainbutton" (click)="login(user)">Iniciar Sesión</button>
+  <button class="register-btn" ion-button block color="secondary" (click)="register()">Registrate</button>
   
+  <!-- <button ion-button block color="facebook">
+    Iniciar Sesión con Facebook
+  </button> -->
+
 </ion-content>

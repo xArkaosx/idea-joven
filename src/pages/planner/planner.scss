@@ -45,4 +45,10 @@ page-planner {
         top: 75%;
         left: 59%;
     }
+
+    .separador-dias {
+        background-color: color($colors, graycustom);
+        // color: white;
+        font-weight: bolder;
+    }
 }

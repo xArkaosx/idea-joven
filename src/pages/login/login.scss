@@ -1,9 +1,33 @@
 page-login {
+    img {
+        display: block;
+        margin: auto;
+    }
+    .master {
+        background: url("../../assets/imgs/inicio-background.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
      .login-btn {
         margin-top: 10px;
+        font-weight: bolder;
      }
 
      .register-btn {
         margin-top: 10px;
+        font-weight: bolder;
+     }
+     .input-labels {
+         font-weight: bolder;
+         color: white;
+         font-size: 18px;
+     }
+     .input-style {
+         background-color: white;
+         border-radius: 3px;
+     }
+     .input-item {
+        //  background-color: white;
+         width: 100%;
      }
 }

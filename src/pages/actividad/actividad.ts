@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
+import { ScrollHideConfig } from '../../components/scroll-hide/scroll-directive';
 // import { Geolocation } from '@ionic-native/geolocation';
 import {
   GoogleMaps,
@@ -14,6 +15,7 @@ import {
   Polyline,
   PolylineOptions
 } from '@ionic-native/google-maps';
+import { PagarPage } from '../pagar/pagar';
 
 
 @Component({
@@ -22,10 +24,14 @@ import {
 })
 export class ActividadPage {
 
+  footerScrollConfig: ScrollHideConfig = { cssProperty: 'margin-bottom', maxValue: undefined };
+  headerScrollConfig: ScrollHideConfig = { cssProperty: 'margin-top', maxValue: 49 };
+
   status: boolean = true;
   public showMore = false;
   public mostrar = 'Mostrar más';
   public icon = 'arrow-dropdown'
+  staticMap: string = "assets/imgs/Actividad01.jpg";
 
   markersLocations: Array<{ lat: number, lng: number }> = [];
   markersLatLngLocations: Array<{ coords: any }> = [];
@@ -68,86 +74,87 @@ export class ActividadPage {
 
   }
 
-  ionViewDidLeave() {
-    this.map.setVisible(false);
-  }
+  // ionViewDidLeave() {
+  //   this.map.setVisible(false);
+  // }
 
-  ionViewDidEnter() {
-    this.map.setVisible(true);
-  }
+  // ionViewDidEnter() {
+  //   this.map.setVisible(true);
+  // }
 
   ionViewDidLoad() {
-    this.status = true;
-    let loc: LatLng
-    this.initMap();
+    // this.staticMap = 'https://maps.googleapis.com/maps/api/staticmap?size=600x400&markers=color:red%7Clabel:1%7C25.425180,-100.153369&markers=color:red%7Clabel:2%7C25.424928,-100.152565&key=AIzaSyD7aZdW8ix5vUAjXqQxigxNzFeO_5B4jI4';
+    // this.status = true;
+    // let loc: LatLng
+    // this.initMap();
 
-    //once the map is ready move the camera into position
-    this.map.one(GoogleMapsEvent.MAP_READY).then(() => {
-      this.map.setClickable(true);
-      this.map.setOptions({
-        controls: {
-          'compass': false,
-          'myLocationButton': false,
-          'myLocation': false,   // (blue dot)
-          'indoorPicker': false,
-          'zoom': false,          // android only
-          'mapToolbar': false     // android only
-        },
-        gestures: {
-          scroll: true,
-          tilt: false,
-          zoom: false,
-          rotate: false
-        },
-        padding: {
-          left: 10,
-          top: 10,
-          bottom: 10,
-          right: 10
-        }
-      });
-      this.map.setMyLocationEnabled(false);
+    // //once the map is ready move the camera into position
+    // this.map.one(GoogleMapsEvent.MAP_READY).then(() => {
+    //   this.map.setClickable(true);
+    //   this.map.setOptions({
+    //     controls: {
+    //       'compass': false,
+    //       'myLocationButton': false,
+    //       'myLocation': false,   // (blue dot)
+    //       'indoorPicker': false,
+    //       'zoom': false,          // android only
+    //       'mapToolbar': false     // android only
+    //     },
+    //     gestures: {
+    //       scroll: true,
+    //       tilt: false,
+    //       zoom: false,
+    //       rotate: false
+    //     },
+    //     padding: {
+    //       left: 10,
+    //       top: 10,
+    //       bottom: 10,
+    //       right: 10
+    //     }
+    //   });
+    //   this.map.setMyLocationEnabled(false);
 
 
-      for (let mrkr of this.markersLocations) {
-        loc = new LatLng(mrkr.lat, mrkr.lng);
-        // this.markersLatLngLocations.push({ coords: loc });
-        let options: MarkerOptions = {
-          position: loc,
-          animation: 'DROP',
-          draggable: false,
-          clickable: true
-          //falta agregar custom icon
-        }
-        this.map.addMarker(options).then((marker: Marker) => {
+    //   for (let mrkr of this.markersLocations) {
+    //     loc = new LatLng(mrkr.lat, mrkr.lng);
+    //     // this.markersLatLngLocations.push({ coords: loc });
+    //     let options: MarkerOptions = {
+    //       position: loc,
+    //       animation: 'DROP',
+    //       draggable: false,
+    //       clickable: true
+    //       //falta agregar custom icon
+    //     }
+    //     this.map.addMarker(options).then((marker: Marker) => {
 
-          marker.addEventListener(GoogleMapsEvent.MARKER_CLICK).subscribe(data => {
-            this.launchNavigator.navigate([data.lat, data.lng]).then(
-              success => console.log('Launched navigator'),
-              error => console.log('Error launching navigator', error)
-            );
-            console.log('marker clicked!');
-          })
+    //       marker.addEventListener(GoogleMapsEvent.MARKER_CLICK).subscribe(data => {
+    //         this.launchNavigator.navigate([data.lat, data.lng]).then(
+    //           success => console.log('Launched navigator'),
+    //           error => console.log('Error launching navigator', error)
+    //         );
+    //         console.log('marker clicked!');
+    //       })
         
-        });
-      }
+    //     });
+    //   }
 
-      this.moveCamera();
-    }).catch(err => {
-      console.log(err);
-      alert("ERROR -> " + err);
-    });
+    //   this.moveCamera();
+    // }).catch(err => {
+    //   console.log(err);
+    //   alert("ERROR -> " + err);
+    // });
 
-    let options: PolylineOptions = {
-      points: this.markersLocations,
-      color: '#2c69ec',
-      width: 5,
-      geodesic: true,
-      clickable: false
-    };
-    this.map.addPolyline(options).then((polyline: Polyline) => {
-      //STUFF TO DO WITH POLYLINE
-    });
+    // let options: PolylineOptions = {
+    //   points: this.markersLocations,
+    //   color: '#2c69ec',
+    //   width: 5,
+    //   geodesic: true,
+    //   clickable: false
+    // };
+    // this.map.addPolyline(options).then((polyline: Polyline) => {
+    //   //STUFF TO DO WITH POLYLINE
+    // });
 
     //NOT WORKING
     // this.map.on(GoogleMapsEvent.MARKER_CLICK).subscribe((latlng: LatLng) => {
@@ -168,19 +175,19 @@ export class ActividadPage {
 
   }
 
-  initMap() {
-    let element = this.mapRef.nativeElement;
+  // initMap() {
+  //   let element = this.mapRef.nativeElement;
 
-    let mapOptions: GoogleMapOptions = {
-      controls: {
-        compass: true,
-        mapToolbar: true
-      }
-    };
+  //   let mapOptions: GoogleMapOptions = {
+  //     controls: {
+  //       compass: true,
+  //       mapToolbar: true
+  //     }
+  //   };
 
-    this.map = GoogleMaps.create(element, mapOptions);
+  //   this.map = GoogleMaps.create(element, mapOptions);
 
-  }
+  // }
 
   // addMarker(position, map) {
   //   if (this.myMarker != null) {
@@ -193,12 +200,12 @@ export class ActividadPage {
   //   }
   // }
 
-  moveCamera() {
-    let options: CameraPosition<any> = {
-      target: this.markersLocations
-    };
-    this.map.moveCamera(options);
-  }
+  // moveCamera() {
+  //   let options: CameraPosition<any> = {
+  //     target: this.markersLocations
+  //   };
+  //   this.map.moveCamera(options);
+  // }
 
   showHide() {
     this.showMore = !this.showMore;
@@ -210,5 +217,9 @@ export class ActividadPage {
       this.icon = 'arrow-dropdown';
       this.mostrar = 'mostrar más';
     }
+  }
+
+  goToPay(){
+    this.navCtrl.push(PagarPage);
   }
 }

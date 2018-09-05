@@ -36,19 +36,28 @@ $tabs-height: 44px !default;
 
 $colors: (
   // primary: (base: #51a305, contrast: #fff),
-  primary:     #ffffff,
+  primary:     #ff6600,
   // primary:    #51a305,
   // primary:    #555555,
   // primary:    #ff9100,
   // primary:    #18cc00,
   primary-dark: #eb0e15,
-  secondary:  #ffd000,
+  secondary:  #ff6600,
+  redorange: #ff3300,
   danger:     #f53d3d,
   light:      #f4f4f4,
   whitecustom:  #fff,
+  graycustom: #c4c4c4,
+  darkergray:   #303030,
   dark:       #222,
   redheart:   #ff3769,
-  bluecompass: (base: #2c69ec, contrast:  #fff),
+  pueblomagico: #dc2cff,
+  warning:      #ffd000,
+  allowed:      #348cff,
+  mainbutton:   (base: #ffffff, contrast: #ff3300),
+  facebook:     (base: #3B5998, contrast: #fff),
+  instagram:    (base: #f7f095, contrast: #b413ff),
+  bluecompass:  (base: #2c69ec, contrast:  #fff),
   experiencias: (base: #51a305, contrast: #fff),
   romantico:    (base: #ff3344, contrast:  #fff),
   pasado:       (base: #705f51, contrast:  #fff),
@@ -58,7 +67,7 @@ $colors: (
   musica:     (base: #0836a9, contrast:  #fff),
   deportes:   (base: #6100cf, contrast:  #fff),
   regio:      (base: #ff7e28, contrast:  #fff),
-  otras:      (base: #1bdd6c, contrast:  #fff),
+  otras:      (base: #1bdd6c, contrast:  #fff)
 );
 
 
@@ -72,7 +81,7 @@ $toolbar-ios-padding: 0px;
 $toolbar-ios-margin: 0px;
 $button-ios-ripple-background-color: #ffffff;
 $text-input-ios-show-focus-highlight: false;
-$tabs-ios-tab-color-active: #18cc00;
+$tabs-ios-tab-color-active: #ff3300;
 $tabs-ios-tab-color-inactive: #3b3b3b;
 
 // App Material Design Variables
@@ -86,7 +95,7 @@ $toolbar-md-margin: 0px;
 $button-md-ripple-background-color: #ffffff;
 $text-input-md-show-focus-highlight: false;
 $item-md-detail-push-show: true;
-$tabs-md-tab-color-active: #18cc00;
+$tabs-md-tab-color-active: #ff3300;
 $tabs-md-tab-color-inactive: #3b3b3b;
 
 
@@ -101,7 +110,7 @@ $toolbar-wp-margin: 0px;
 $button-wp-ripple-background-color: #ffffff;
 $text-input-wp-show-focus-highlight: false;
 $item-wp-detail-push-show: true;
-$tabs-wp-tab-color-active: #18cc00;
+$tabs-wp-tab-color-active: #ff3300;
 $tabs-wp-tab-color-inactive: #3b3b3b;
 
 // App Theme

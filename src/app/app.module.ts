@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { LaunchNavigator } from '../../node_modules/@ionic-native/launch-navigator';
+import { ScrollHideDirective } from '../components/scroll-hide/scroll-directive';
 
 // PAGINAS
 import { MyApp } from './app.component';
@@ -37,6 +38,7 @@ import { FavoritosPage } from '../pages/favoritos/favoritos';
 import { LogrosPage } from '../pages/logros/logros';
 import { ActividadPage } from '../pages/actividad/actividad';
 import { CalendarioPage } from '../pages/calendario/calendario';
+import { PagarPage } from '../pages/pagar/pagar';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     LogrosPage,
     ActividadPage,
     CalendarioPage,
+    ScrollHideDirective,
+    PagarPage
   ],
   imports: [
     BrowserModule,
@@ -97,7 +101,7 @@ import { CalendarioPage } from '../pages/calendario/calendario';
     LogrosPage,
     ActividadPage,
     CalendarioPage,
-
+    PagarPage
   ],
   providers: [
     StatusBar,
