@@ -99,18 +99,6 @@
         <variable name="OKHTTP_VERSION" value="3.+" />
         <variable name="LOCATION_USAGE_DESCRIPTION" value="This app requires access to your location for navigation purposes" />
     </plugin>
-<<<<<<< HEAD
-    <plugin name="cordova-plugin-googlemaps" spec="^2.3.10">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBVo9s4kZWkSL9LJShM6HYgJhFIWWABI4o" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyD7aZdW8ix5vUAjXqQxigxNzFeO_5B4jI4" />
-        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="My custom when in use message" />
-        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="My custom always usage message" />
-        <variable name="AIzaSyD7aZdW8ix5vUAjXqQxigxNzFeO_5B4jI4" value="My custom when in use message" />
-    </plugin>
-    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
-    <plugin name="cordova-plugin-firebase" spec="^1.0.5" />
-=======
     <engine name="ios" spec="4.5.4" />
     <engine name="android" spec="^7.0.0" />
->>>>>>> c2f75b0aeb96ca0cfdaaf638cc04673bfdf98598
 </widget>

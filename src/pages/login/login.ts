@@ -23,15 +23,9 @@ export class LoginPage {
     public toastCtrl: ToastController,
     public alertCtrl: AlertController) {
   }
-<<<<<<< HEAD
-   login() {
-     this.navCtrl.setRoot(TabsPage);
-   }
-=======
   login() {
     this.navCtrl.setRoot(TabsPage);
   }
->>>>>>> c2f75b0aeb96ca0cfdaaf638cc04673bfdf98598
 
 //  alert(titleText: string, message: string) {
 //    this.alertCtrl.create({
@@ -41,30 +35,6 @@ export class LoginPage {
 //    }).present();
 //  }
 
-<<<<<<< HEAD
-//  async login(user: User) {
-//    if (!this.user.email || !this.user.password) {
-//      let toast = this.toastCtrl.create({
-//        message: 'You forgot to put your Username or Password',
-//        duration: 3000
-//      });
-//      toast.present();
-//    } else {
-//      this.afAuth.auth.signInWithEmailAndPassword(this.user.email, this.user.password)
-//        .then(data => {
-//          console.log('got some data', data);
-//          this.navCtrl.setRoot(TabsPage);
-          //user is logged in
-//        })
-//        .catch(error => {
-//          console.log('got an error', error);
-//          this.alert('Error!', error.message);
-//        })
-
-//      console.log('Would sign in with:', this.user.email, ' & ', this.user.password);
-//   }
-//  }
-=======
   // async login(user: User) {
   //   if (!this.user.email || !this.user.password) {
   //     let toast = this.toastCtrl.create({
@@ -87,7 +57,6 @@ export class LoginPage {
   //     console.log('Would sign in with:', this.user.email, ' & ', this.user.password);
   //  }
   // }
->>>>>>> c2f75b0aeb96ca0cfdaaf638cc04673bfdf98598
 
   register() {
     this.navCtrl.push(RegisterPage);
